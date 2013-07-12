@@ -1,0 +1,18 @@
+# See http://about.travis-ci.org/docs/user/languages/php/ for more hints
+language: php
+
+# Versions of PHP to test against
+php:
+  - 5.5
+  - 5.4
+  - 5.3
+
+# Setup before the tests
+before_script:
+    composer install --dev --no-interaction
+
+# Run unit and functional tests.
+# Not sure how to setup for running acceptance tests or if it's even possible on Travis.
+script:
+    vendor\bin\codecept run unit
+    vendor\bin\codecept run functional
