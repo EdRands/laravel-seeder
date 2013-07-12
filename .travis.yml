@@ -8,11 +8,8 @@ php:
   - 5.3
 
 # Setup before the tests
-before_script:
-    composer install --dev --no-interaction
+before_script: composer install --dev --no-interaction
 
 # Run unit and functional tests.
-# Not sure how to setup for running acceptance tests or if it's even possible on Travis.
-script:
-    vendor/bin/codecept run unit
-    vendor/bin/codecept run functional
+# Not sure how to setup for running acceptance tests
+script: vendor/bin/codecept run -s acceptance
