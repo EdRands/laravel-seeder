@@ -14,5 +14,5 @@ before_script:
 # Run unit and functional tests.
 # Not sure how to setup for running acceptance tests or if it's even possible on Travis.
 script:
-    vendor\bin\codecept run unit
-    vendor\bin\codecept run functional
+    vendor/bin/codecept run unit
+    vendor/bin/codecept run functional
