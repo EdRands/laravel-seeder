@@ -1,2 +1,2 @@
 @ECHO OFF
-composer create-project --prefer-dist edrands/laravel-seeder %*
+composer create-project edrands/laravel-seeder %*
