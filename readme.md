@@ -1,5 +1,7 @@
 # Enhanced Laravel Project Seeder
 
+[![Build Status](https://travis-ci.org/edrands/laravel-seeder.png?branch=master)](https://travis-ci.org/edrands/laravel-seeder) [![Latest Stable Version](https://poser.pugx.org/edrands/laravel-seeder/v/stable.png)](https://packagist.org/packages/edrands/laravel-seeder)
+
 ## About the Enhanced Laravel Project Seeder
 
 After starting a few projects with Laravel, I realized I was repeating myself a lot in my first few steps, setting up the same things just to get going. This project is meant to alleviate that problem, so I can get rolling on the actual project fast.
