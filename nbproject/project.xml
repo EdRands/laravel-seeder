@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.php.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/php-project/1">
+            <name>Laravel Seed</name>
+        </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>app</word>
+            <word>config</word>
+            <word>json</word>
+            <word>Laravel</word>
+            <word>NetBeans</word>
+            <word>nginx</word>
+            <word>php</word>
+            <word>website</word>
+            <word>xml</word>
+        </spellchecker-wordlist>
+    </configuration>
+</project>

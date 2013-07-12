@@ -1,0 +1,51 @@
+#############
+## Operating Systems
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac stuff
+.DS_Store
+
+#############
+## Miscellaneous
+#############
+*.bak
+
+# SQLite database snapshots
+*_snapshot
+
+
+#############
+## Laravel
+#############
+/bootstrap/compiled.php
+_ide_helper.php
+_ide_helper_models.php
+
+
+#############
+## Composer
+#############
+/vendor/
+composer.phar
+composer.lock
+
+
+#############
+## NetBeans IDE
+#############
+/nbproject/private/
+
+
+#############
+## Project
+#############
