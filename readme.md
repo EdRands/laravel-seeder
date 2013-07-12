@@ -26,7 +26,7 @@ I found the information in Laravel 3's profiler to be helpful sometimes. It does
 [Composer](http://getcomposer.org) must be installed on your system in order for this to work. But if you're working with Laravel, you probably have it installed all ready anyway.
 
 1. Open a command prompt in the directory where you keep your projects. For example, I'm running Windows and use `c:\websites`
-2. Now run `composer create-project --prefer-dist edrands/laravel-seeder project-name` replacing `project-name` with the name of the directory for all your project's file. This must be a non-existent or empty directory.
+2. Now run `composer create-project edrands/laravel-seeder project-name` replacing `project-name` with the name of the directory for all your project's file. This must be a non-existent or empty directory.
 3. Wait while Composer automatically downloads the seed, installs all the dependencies, generates an IDE code completion helper, and generates a random hashing key.
 4. Follow the steps in `todo.md` in the root directory of your new project.
 5. Get working on the specifics of your project.
