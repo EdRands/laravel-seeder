@@ -1,18 +1,40 @@
-# Ed Rands' Laravel Project Seed
+# Enhanced Laravel Project Seeder
 
-## About The Laravel Project Seed
+## About the Enhanced Laravel Project Seeder
 
-After starting a few projects with Laravel, I realized I was repeating myself a lot in my first few steps. This seed is meant to alleviate that problem, so I can get rolling on the actual project fast.
+After starting a few projects with Laravel, I realized I was repeating myself a lot in my first few steps, setting up the same things just to get going. This project is meant to alleviate that problem, so I can get rolling on the actual project fast.
 
-Customization steps are listed in todo.md.
+This package is not meant to be a dependency for other projects. It's meant to be used with Composer's `create-project` command.
 
-This is meant mostly for my benefit, but if it's helpful to you, you're welcome to start your own Laravel based projects with this seed, or fork it and customize it to your needs.
+This is meant mostly for my benefit, but if it's helpful to you, you're welcome to start your own Laravel based projects with it, or fork it and customize it to your needs.
+
+### What's In This Thing
+
+[Laravel 4.0](http://laravel.com/), of course. Wouldn't be much of a Laravel project seeder without that.
+
+Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes [Codeception](http://codeception.com/), [Mockery](https://github.com/padraic/mockery) and [Hamcrest](https://github.com/davedevelopment/hamcrest-php). These tools make testing easier, almost fun, and therefore more likely testing will actually happen.
+
+IDEs and code editors don't really understand the Laravel facade system, and so they have trouble giving you code suggestions and documentation for a lot of Laravel's functionality. To compensate for this, the [Laravel IDE Helper Generator](https://github.com/barryvdh/laravel-ide-helper) is included. Each time you update in Composer, a helper file is generated that your editor can understand.
+
+I found the information in Laravel 3's profiler to be helpful sometimes. It doesn't exist in Laravel 4, so a [Profiler](https://github.com/juy/profiler) has been included, which actually has more information than Laravel 3's offered.
+
+
+### Installing
+
+[Composer](http://getcomposer.org) must be installed on your system in order for this to work. But if you're working with Laravel, you probably have it installed all ready anyway.
+
+1. Open a command prompt in the directory where you keep your projects. For example, I'm running Windows and use `c:\websites`
+2. Now run `composer create-project --prefer-dist edrands/laravel-seeder project-name` replacing `project-name` with the name of the directory for all your project's file. This must be a non-existent or empty directory.
+3. Wait while Composer automatically downloads the seed, installs all the dependencies, generates an IDE code completion helper, and generates a random hashing key.
+4. Follow the steps in `todo.md` in the root directory of your new project.
+5. Get working on the specifics of your project.
+
 
 ### Contributing
 
-If you'd like to enhance this project seed, you can help in the typical GitHub way.
+If you'd like to contribute to this project, you can help in the typical GitHub way.
 
-Issues and pull requests for the project seed should be filed on the [edrands/laravel-seed](https://github.com/edrands/laravel-seed) repository.
+Issues and pull requests should be filed on the [edrands/laravel-seeder](https://github.com/edrands/laravel-seeder) repository.
 
 Please keep in mind that since this seed is meant for the way I work, if you'd like customizations specific to the way you work, your best option is to fork this project and modify from there.
 
@@ -20,7 +42,7 @@ If your issue or pull request is related to Laravel itself, please see below abo
 
 ### License
 
-My Laravel Project Seed is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The Enhanced Laravel Project Seeder is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
 
 ## About Laravel
@@ -45,6 +67,9 @@ All issues and pull requests should be filed on the [laravel/framework](http://g
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
+
+## Example Readme:
+You can delete from here up for your project's readme.
 
 # Project Title
 
