@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Enhanced Laravel Project Seeder by edrands</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Enhanced Laravel Project Seeder</h1>
+        <h2>The fastest way to start a new Laravel project</h2>
+        <a href="https://github.com/edrands/laravel-seeder" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="enhanced-laravel-project-seeder" class="anchor" href="#enhanced-laravel-project-seeder"><span class="octicon octicon-link"></span></a>Enhanced Laravel Project Seeder</h1>
+
+<p><a href="https://packagist.org/packages/edrands/laravel-seeder"><img src="https://poser.pugx.org/edrands/laravel-seeder/v/stable.png" alt="Latest Stable Version"></a> <a href="https://travis-ci.org/edrands/laravel-seeder"><img src="https://travis-ci.org/edrands/laravel-seeder.png?branch=master" alt="Build Status"></a></p>
+
+<h2>
+<a name="about-the-enhanced-laravel-project-seeder" class="anchor" href="#about-the-enhanced-laravel-project-seeder"><span class="octicon octicon-link"></span></a>About the Enhanced Laravel Project Seeder</h2>
+
+<p>After starting a few projects with Laravel, I realized I was repeating myself a lot in my first few steps, setting up the same things just to get going. This project is meant to alleviate that problem, so I can get rolling on the actual project fast.</p>
+
+<p>This package is not meant to be a dependency for other projects. It's meant to be used with Composer's <code>create-project</code> command.</p>
+
+<p>This is meant mostly for my benefit, but if it's helpful to you, you're welcome to start your own Laravel based projects with it, or fork it and customize it to your needs.</p>
+
+<h3>
+<a name="whats-in-this-thing" class="anchor" href="#whats-in-this-thing"><span class="octicon octicon-link"></span></a>What's In This Thing</h3>
+
+<p><a href="http://laravel.com/">Laravel 4.0</a>, of course. Wouldn't be much of a Laravel project seeder without that.</p>
+
+<p>Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes <a href="http://codeception.com/">Codeception</a>, <a href="https://github.com/padraic/mockery">Mockery</a> and <a href="https://github.com/davedevelopment/hamcrest-php">Hamcrest</a>. These tools make testing easier, almost fun, and therefore more likely testing will actually happen.</p>
+
+<p>IDEs and code editors don't really understand the Laravel facade system, and so they have trouble giving you code suggestions and documentation for a lot of Laravel's functionality. To compensate for this, the <a href="https://github.com/barryvdh/laravel-ide-helper">Laravel IDE Helper Generator</a> is included. Each time you update in Composer, a helper file is generated that your editor can understand.</p>
+
+<p>I found the information in Laravel 3's profiler to be helpful sometimes. It doesn't exist in Laravel 4, so a <a href="https://github.com/juy/profiler">Profiler</a> has been included, which actually has more information than Laravel 3's offered.</p>
+
+<h3>
+<a name="installing" class="anchor" href="#installing"><span class="octicon octicon-link"></span></a>Installing</h3>
+
+<p><a href="http://getcomposer.org">Composer</a> must be installed on your system in order for this to work. But if you're working with Laravel, you probably have it installed all ready anyway.</p>
+
+<ol>
+<li>Open a command prompt in the directory where you keep your projects. For example, I'm running Windows and use <code>c:\websites</code>
+</li>
+<li>Now run <code>composer create-project --prefer-dist edrands/laravel-seeder project-name</code> replacing <code>project-name</code> with the name of the directory for all your project's file. This must be a non-existent or empty directory.</li>
+<li>Wait while Composer automatically downloads the seed, installs all the dependencies, generates an IDE code completion helper, and generates a random hashing key.</li>
+<li>Follow the steps in <code>todo.md</code> in the root directory of your new project.</li>
+<li>Get working on the specifics of your project.</li>
+</ol><h3>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h3>
+
+<p>If you'd like to contribute to this project, you can help in the typical GitHub way.</p>
+
+<p>Issues and pull requests should be filed on the <a href="https://github.com/edrands/laravel-seeder">edrands/laravel-seeder</a> repository.</p>
+
+<p>Please keep in mind that since this seed is meant for the way I work, if you'd like customizations specific to the way you work, your best option is to fork this project and modify from there.</p>
+
+<p>If your issue or pull request is related to Laravel itself, please see below about how to contribute to Laravel.</p>
+
+<h3>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p>The Enhanced Laravel Project Seeder is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a></p>
+
+<h2>
+<a name="about-laravel" class="anchor" href="#about-laravel"><span class="octicon octicon-link"></span></a>About Laravel</h2>
+
+<p><a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/version.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.png" alt="Total Downloads"></a> <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.png" alt="Build Status"></a></p>
+
+<p>Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.</p>
+
+<p>Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.</p>
+
+<p>Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.</p>
+
+<h3>
+<a name="official-documentation" class="anchor" href="#official-documentation"><span class="octicon octicon-link"></span></a>Official Documentation</h3>
+
+<p>Documentation for the entire framework can be found on the <a href="http://laravel.com/docs">Laravel website</a>.</p>
+
+<h3>
+<a name="contributing-to-laravel" class="anchor" href="#contributing-to-laravel"><span class="octicon octicon-link"></span></a>Contributing To Laravel</h3>
+
+<p>All issues and pull requests should be filed on the <a href="http://github.com/laravel/framework">laravel/framework</a> repository.</p>
+
+<h3>
+<a name="license-1" class="anchor" href="#license-1"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p>The Laravel framework is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/edrands/laravel-seeder/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/edrands/laravel-seeder/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/edrands/laravel-seeder"></a> is maintained by <a href="https://github.com/edrands">edrands</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
