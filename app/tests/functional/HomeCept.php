@@ -5,5 +5,5 @@ $I->wantTo('view the welcome splash page');
 $I->lookForwardTo('seeing the welcome message');
 
 $I->amOnPage('/');
-$I->see('Project seed is up and running', 'h1');
+$I->see('The Enhanced Laravel Project Seeder is up and running', 'h1');
 
