@@ -1,6 +1,6 @@
 # Enhanced Laravel Project Seeder
 
-[![Build Status](https://travis-ci.org/edrands/laravel-seeder.png?branch=master)](https://travis-ci.org/edrands/laravel-seeder) [![Latest Stable Version](https://poser.pugx.org/edrands/laravel-seeder/v/stable.png)](https://packagist.org/packages/edrands/laravel-seeder)
+[![Latest Stable Version](https://poser.pugx.org/edrands/laravel-seeder/v/stable.png)](https://packagist.org/packages/edrands/laravel-seeder) [![Build Status](https://travis-ci.org/edrands/laravel-seeder.png?branch=master)](https://travis-ci.org/edrands/laravel-seeder)
 
 ## About the Enhanced Laravel Project Seeder
 
