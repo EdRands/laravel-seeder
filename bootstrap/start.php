@@ -29,6 +29,7 @@ $app->redirectIfTrailingSlash();
 $env = $app->detectEnvironment(array(
 
 	'development' => array('localhost', '*.dev', 'ELaptop'),
+    'testing' => array('*travis-ci*'),
 
 ));
 

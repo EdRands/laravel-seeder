@@ -8,7 +8,10 @@ php:
   - 5.3
 
 # Setup before the tests
-before_script: composer install --dev --no-interaction
+before_script:
+  - php hostname.php
+  - composer self-update
+  - composer install --dev --no-interaction --prefer-source
 
 # Run unit and functional tests.
 # Not sure how to setup for running acceptance tests
