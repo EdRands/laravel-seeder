@@ -3,4 +3,5 @@
 # Except for these files
 !/.gitignore
 !/readme.md
+!/.travis.yml
 !/laravel-seed*
