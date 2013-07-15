@@ -1,8 +1,9 @@
 {
     "name": "edrands/laravel-seeder",
-    "description": "The Enhanced Laravel Project Seeder gets your new Laravel projects up-and-running fast. Features self-contained testing (no pear or global testing package required).",
-    "keywords": ["laravel", "seeder", "starter"],
+    "description": "The Enhanced Laravel Project Seeder gets new Laravel projects up-and-running fast. Features self-contained testing (no pear or global testing package required).",
+    "keywords": ["laravel", "seeder", "starter", "project"],
     "license": "MIT",
+    "type": "project",
     "require": {
         "laravel/framework": "4.0.*"
     },
