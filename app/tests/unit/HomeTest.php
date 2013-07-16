@@ -1,17 +1,21 @@
 <?php
 
-class HomeTest extends TestCase {
+use Way\Tests\Assert; /* https://github.com/JeffreyWay/Laravel-Test-Helpers#assert-and-should */
+use Way\Tests\Should;
 
-	/**
-	 * A basic functional test example.
-	 *
-	 * @return void
-	 */
-	public function testHomePageIsWorking()
-	{
-		$crawler = $this->client->request('GET', '/');
+class HomeTest extends TestCase
+{
 
-		$this->assertTrue($this->client->getResponse()->isOk());
-	}
+    /**
+     * Test that the front page loads.
+     *
+     * @return void
+     */
+    public function testHomePageIsWorking()
+    {
+        $crawler = $this->client->request('GET', '/');
+
+        Assert::true($this->client->getResponse()->isOk());
+    }
 
 }
