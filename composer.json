@@ -8,6 +8,7 @@
         "laravel/framework": "4.0.*"
     },
     "require-dev": {
+        "way/laravel-test-helpers": "dev-master",
         "mockery/mockery": "dev-master@dev",
         "davedevelopment/hamcrest-php": "dev-master",
         "codeception/codeception": "@stable",
