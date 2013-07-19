@@ -7,6 +7,8 @@
 use \Codeception\Maybe;
 use Codeception\Module\PhpBrowser;
 use Codeception\Module\WebHelper;
+use Codeception\Module\Laravel4;
+use Codeception\Module\Db;
 
 /**
  * Inherited methods
@@ -62,7 +64,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $selector
      * @param $params
-     * @see PhpBrowser::submitForm()
+     * @see Framework::submitForm()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -96,7 +98,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $uri
      * @param $params
-     * @see PhpBrowser::sendAjaxPostRequest()
+     * @see Framework::sendAjaxPostRequest()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -119,7 +121,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $uri
      * @param $params
-     * @see PhpBrowser::sendAjaxGetRequest()
+     * @see Framework::sendAjaxGetRequest()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -136,7 +138,7 @@ class WebGuy extends \Codeception\AbstractGuy
  
     /**
      * Asserts that current page has 404 response status code.
-     * @see PhpBrowser::seePageNotFound()
+     * @see Framework::seePageNotFound()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -156,7 +158,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $code
      * @return mixed
-     * @see PhpBrowser::seeResponseCodeIs()
+     * @see Framework::seeResponseCodeIs()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -176,7 +178,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $username
      * @param $password
-     * @see PhpBrowser::amHttpAuthenticated()
+     * @see Framework::amHttpAuthenticated()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -233,9 +235,21 @@ class WebGuy extends \Codeception\AbstractGuy
  
     /**
      * Opens the page.
+     * Requires relative uri as parameter
+     *
+     * Example:
+     *
+     * ``` php
+     * <?php
+     * // opens front page
+     * $I->amOnPage('/');
+     * // opens /register page
+     * $I->amOnPage('/register');
+     * ?>
+     * ```
      *
      * @param $page
-     * @see Mink::amOnPage()
+     * @see Framework::amOnPage()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -297,7 +311,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $text
      * @param null $selector
-     * @see Mink::dontSee()
+     * @see Framework::dontSee()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -328,7 +342,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $text
      * @param null $selector
-     * @see Mink::see()
+     * @see Framework::see()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -358,7 +372,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $text
      * @param null $url
-     * @see Mink::seeLink()
+     * @see Framework::seeLink()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -387,7 +401,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $text
      * @param null $url
-     * @see Mink::dontSeeLink()
+     * @see Framework::dontSeeLink()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -431,7 +445,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ```
      * @param $link
      * @param $context
-     * @see Mink::click()
+     * @see Framework::click()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -456,7 +470,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ?>
      * ```
      * @param $selector
-     * @see Mink::seeElement()
+     * @see Framework::seeElement()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -481,7 +495,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ?>
      * ```
      * @param $selector
-     * @see Mink::dontSeeElement()
+     * @see Framework::dontSeeElement()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -552,7 +566,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $field
      * @param $value
-     * @see Mink::fillField()
+     * @see Framework::fillField()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -582,7 +596,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $select
      * @param $option
-     * @see Mink::selectOption()
+     * @see Framework::selectOption()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -610,7 +624,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ```
      *
      * @param $option
-     * @see Mink::checkOption()
+     * @see Framework::checkOption()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -637,7 +651,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ```
      *
      * @param $option
-     * @see Mink::uncheckOption()
+     * @see Framework::uncheckOption()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -665,7 +679,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ```
      *
      * @param $uri
-     * @see Mink::seeInCurrentUrl()
+     * @see Framework::seeInCurrentUrl()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -690,7 +704,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ```
      *
      * @param $uri
-     * @see Mink::dontSeeInCurrentUrl()
+     * @see Framework::dontSeeInCurrentUrl()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -715,7 +729,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ?>
      *
      * @param $uri
-     * @see Mink::seeCurrentUrlEquals()
+     * @see Framework::seeCurrentUrlEquals()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -740,7 +754,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ?>
      *
      * @param $uri
-     * @see Mink::dontSeeCurrentUrlEquals()
+     * @see Framework::dontSeeCurrentUrlEquals()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -764,7 +778,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ?>
      *
      * @param $uri
-     * @see Mink::seeCurrentUrlMatches()
+     * @see Framework::seeCurrentUrlMatches()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -788,7 +802,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ?>
      *
      * @param $uri
-     * @see Mink::dontSeeCurrentUrlMatches()
+     * @see Framework::dontSeeCurrentUrlMatches()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -902,7 +916,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * @param null $uri
      * @internal param $url
      * @return mixed
-     * @see Mink::grabFromCurrentUrl()
+     * @see Framework::grabFromCurrentUrl()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -931,7 +945,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $field
      * @param $filename
-     * @see Mink::attachFile()
+     * @see Framework::attachFile()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -958,12 +972,12 @@ class WebGuy extends \Codeception\AbstractGuy
      * @param $selector
      * @param $optionText
      * @return mixed
-     * @see Mink::seeOptionIsSelected()
+     * @see Framework::seeOptionIsSelected()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
      */
-    public function seeOptionIsSelected($select, $text) {
+    public function seeOptionIsSelected($select, $optionText) {
         $this->scenario->assertion('seeOptionIsSelected', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
@@ -985,12 +999,12 @@ class WebGuy extends \Codeception\AbstractGuy
      * @param $selector
      * @param $optionText
      * @return mixed
-     * @see Mink::dontSeeOptionIsSelected()
+     * @see Framework::dontSeeOptionIsSelected()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
      */
-    public function dontSeeOptionIsSelected($select, $text) {
+    public function dontSeeOptionIsSelected($select, $optionText) {
         $this->scenario->action('dontSeeOptionIsSelected', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
@@ -1015,7 +1029,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ```
      *
      * @param $checkbox
-     * @see Mink::seeCheckboxIsChecked()
+     * @see Framework::seeCheckboxIsChecked()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -1044,7 +1058,7 @@ class WebGuy extends \Codeception\AbstractGuy
      * ```
      *
      * @param $checkbox
-     * @see Mink::dontSeeCheckboxIsChecked()
+     * @see Framework::dontSeeCheckboxIsChecked()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -1077,7 +1091,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $field
      * @param $value
-     * @see Mink::seeInField()
+     * @see Framework::seeInField()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -1109,7 +1123,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $field
      * @param $value
-     * @see Mink::dontSeeInField()
+     * @see Framework::dontSeeInField()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -1140,7 +1154,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $cssOrXPathOrRegex
      * @return mixed
-     * @see Mink::grabTextFrom()
+     * @see Framework::grabTextFrom()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -1171,7 +1185,7 @@ class WebGuy extends \Codeception\AbstractGuy
      *
      * @param $field
      * @return mixed
-     * @see Mink::grabValueFrom()
+     * @see Framework::grabValueFrom()
      * @return \Codeception\Maybe
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -1195,6 +1209,234 @@ class WebGuy extends \Codeception\AbstractGuy
      */
     public function grabAttribute() {
         $this->scenario->action('grabAttribute', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Assert that the session has a given list of values.
+	 *
+	 * @param  string|array  $key
+	 * @param  mixed  $value
+	 * @return void
+     * @see Laravel4::seeInSession()
+     * @return \Codeception\Maybe
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeInSession($key, $value = null) {
+        $this->scenario->assertion('seeInSession', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Assert that the session has a given list of values.
+	 *
+	 * @param  array  $bindings
+	 * @return void
+     * @see Laravel4::seeSessionHasValues()
+     * @return \Codeception\Maybe
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeSessionHasValues($bindings) {
+        $this->scenario->assertion('seeSessionHasValues', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Assert that the session has errors bound.
+	 *
+	 * @return bool
+     * @see Laravel4::seeSessionHasErrors()
+     * @return \Codeception\Maybe
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeSessionHasErrors() {
+        $this->scenario->assertion('seeSessionHasErrors', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Set the currently logged in user for the application.
+	 *
+	 * @param  \Illuminate\Auth\UserInterface  $user
+	 * @param  string  $driver
+	 * @return void
+     * @see Laravel4::amLoggedAs()
+     * @return \Codeception\Maybe
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function amLoggedAs($user, $driver = null) {
+        $this->scenario->condition('amLoggedAs', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     *
+     * @see Framework::formatResponse()
+     * @return \Codeception\Maybe
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function formatResponse($response) {
+        $this->scenario->action('formatResponse', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Inserts SQL record into database. This record will be erased after the test.
+     *
+     * ``` php
+     * <?php
+     * $I->haveInDatabase('users', array('name' => 'miles', 'email' => 'miles@davis.com'));
+     * ?>
+     * ```
+     *
+     * @param $table
+     * @param array $data
+     * @see Db::haveInDatabase()
+     * @return \Codeception\Maybe
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function haveInDatabase($table, $data) {
+        $this->scenario->action('haveInDatabase', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks if a row with given column values exists.
+     * Provide table name and column values.
+     *
+     * Example:
+     *
+     * ``` php
+     * <?php
+     * $I->seeInDatabase('users', array('name' => 'Davert', 'email' => 'davert@mail.com'));
+     *
+     * ```
+     * Will generate:
+     *
+     * ``` sql
+     * SELECT COUNT(*) FROM `users` WHERE `name` = 'Davert' AND `email` = 'davert@mail.com'
+     * ```
+     * Fails if no such user found.
+     *
+     * @param $table
+     * @param array $criteria
+     * @see Db::seeInDatabase()
+     * @return \Codeception\Maybe
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeInDatabase($table, $criteria = null) {
+        $this->scenario->assertion('seeInDatabase', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Effect is opposite to ->seeInDatabase
+     *
+     * Checks if there is no record with such column values in database.
+     * Provide table name and column values.
+     *
+     * Example:
+     *
+     * ``` php
+     * <?php
+     * $I->seeInDatabase('users', array('name' => 'Davert', 'email' => 'davert@mail.com'));
+     *
+     * ```
+     * Will generate:
+     *
+     * ``` sql
+     * SELECT COUNT(*) FROM `users` WHERE `name` = 'Davert' AND `email` = 'davert@mail.com'
+     * ```
+     * Fails if such user was found.
+     *
+     * @param $table
+     * @param array $criteria
+     * @see Db::dontSeeInDatabase()
+     * @return \Codeception\Maybe
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeInDatabase($table, $criteria = null) {
+        $this->scenario->action('dontSeeInDatabase', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Fetches a single column value from a database.
+     * Provide table name, desired column and criteria.
+     *
+     * Example:
+     *
+     * ``` php
+     * <?php
+     * $mail = $I->grabFromDatabase('users', 'email', array('name' => 'Davert'));
+     *
+     * ```
+     *
+     * @version 1.1
+     * @param $table
+     * @param $column
+     * @param array $criteria
+     * @return mixed
+     * @see Db::grabFromDatabase()
+     * @return \Codeception\Maybe
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function grabFromDatabase($table, $column, $criteria = null) {
+        $this->scenario->action('grabFromDatabase', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
