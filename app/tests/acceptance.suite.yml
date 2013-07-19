@@ -10,9 +10,4 @@
 
 class_name: WebGuy
 modules:
-    enabled:
-        - PhpBrowser
-        - WebHelper
-    config:
-        PhpBrowser:
-            url: 'http://laravelseed.dev'
+    enabled: [PhpBrowser, WebHelper, Laravel4, Db]
