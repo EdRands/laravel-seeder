@@ -8,10 +8,14 @@ php:
   - 5.3
 
 # Setup before the tests
+# Install nginx and turn on php
 before_script:
-  - composer self-update
-  - composer install --dev --no-interaction --prefer-source
+  - php-cgi --version
+  - sudo apt-get -qq install nginx
+  - php-cgi -b 127.0.0.1:9000 &
+  - sudo nginx -c app/tests/nginx.conf -p "$PWD/"
+  - composer self-update -n
+  - composer install --dev -n --prefer-source
 
-# Run unit and functional tests.
-# Not sure how to setup for running acceptance tests
-script: vendor/bin/codecept run -s acceptance
+# Run tests through Codeception
+script: vendor/bin/codecept run -n -c "codeception.travis.yml"
