@@ -3,9 +3,9 @@ language: php
 
 # Versions of PHP to test against
   #- 5.5
+  #- 5.4
 php:
-  - 5.4
-  - 5.3.18
+  - 5.3.3
 
 # Setup before the tests
 # Install nginx and turn on php
