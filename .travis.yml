@@ -2,15 +2,17 @@
 language: php
 
 # Versions of PHP to test against
-  #- 5.5
-  #- 5.4
+# 5.3.3 is specified because later versions do not support php-cgi
 php:
+  - 5.5
+  - 5.4
   - 5.3.3
 
 # Setup before the tests
 # Install nginx and turn on php
 before_script:
   - php-cgi --version
+  - dir /home/travis/.phpenv/versions -A
   - sudo apt-get -qq install nginx
   - php-cgi -b 127.0.0.1:9000 &
   - sudo nginx -c app/tests/nginx.conf -p "$PWD/"
