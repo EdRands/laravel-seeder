@@ -5,7 +5,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "laravel/framework": "4.0.*"
+        "laravel/framework": "4.0.9"
     },
     "require-dev": {
         "way/laravel-test-helpers": "dev-master",
