@@ -5,7 +5,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "laravel/framework": "4.0.*"
+        "laravel/framework": "4.0.9"
     },
     "require-dev": {
         "way/laravel-test-helpers": "dev-master",
@@ -30,10 +30,8 @@
             "php artisan ide-helper:generate",
             "php artisan optimize"
         ],
-        "pre-update-cmd": [
-            "php artisan clear-compiled"
-        ],
         "post-update-cmd": [
+            "php artisan clear-compiled",
             "php artisan ide-helper:generate",
             "php artisan optimize"
         ],
