@@ -2,11 +2,9 @@
 language: php
 
 # Versions of PHP to test against
-# 5.3.3 is specified because later versions do not support php-cgi
 php:
   - 5.5
   - 5.4
-#  - 5.3.3
 
 # Setup before the tests
 # Install nginx and turn on php
