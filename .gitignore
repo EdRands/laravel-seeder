@@ -12,9 +12,6 @@ desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-# Mac stuff
-.DS_Store
-
 #############
 ## Miscellaneous
 #############
