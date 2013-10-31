@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "90450edc16035faa984330c44d37e0ac",
+    "hash": "07a1509ead4ba48602d530e4b791c750",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -784,12 +784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "68a4af953e21ad4cfdfe8719cc17171915b1af78"
+                "reference": "7f99ac07d38fd367d1f5f85693ae8433738f7f94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/68a4af953e21ad4cfdfe8719cc17171915b1af78",
-                "reference": "68a4af953e21ad4cfdfe8719cc17171915b1af78",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/7f99ac07d38fd367d1f5f85693ae8433738f7f94",
+                "reference": "7f99ac07d38fd367d1f5f85693ae8433738f7f94",
                 "shasum": ""
             },
             "require": {
@@ -839,7 +839,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-10-31 21:21:31"
+            "time": "2013-10-31 21:38:39"
         },
         {
             "name": "nesbot/carbon",
@@ -3251,9 +3251,9 @@
         "codeception/codeception": 0,
         "juy/profiler": 20
     },
-    "platform": [
-
-    ],
+    "platform": {
+        "php": ">=5.4.0"
+    },
     "platform-dev": [
 
     ]
