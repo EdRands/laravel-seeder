@@ -293,7 +293,7 @@ class TestGuy extends \Codeception\AbstractGuy
      * ``` php
      * <?php
      * $I->openFile('composer.json');
-     * $I->seeInThisFile('codeception/codeception');
+     * $I->dontSeeInThisFile('codeception/codeception');
      * ?>
      * ```
      *
@@ -320,7 +320,7 @@ class TestGuy extends \Codeception\AbstractGuy
      * ``` php
      * <?php
      * $I->openFile('composer.json');
-     * $I->seeInThisFile('codeception/codeception');
+     * $I->dontSeeInThisFile('codeception/codeception');
      * ?>
      * ```
      *
@@ -585,6 +585,45 @@ class TestGuy extends \Codeception\AbstractGuy
      */
     public function amLoggedAs($user, $driver = null) {
         $this->scenario->addStep(new \Codeception\Step\Condition('amLoggedAs', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Return an instance of a class from the IoC Container.
+	 * (http://laravel.com/docs/ioc)
+	 * 
+	 * Example
+	 * ``` php
+     * <?php
+	 * // In Laravel
+	 * App::bind('foo', function($app)
+	 * {
+	 *     return new FooBar;
+	 * });
+	 * 
+	 * // Then in test
+	 * $service = $I->grabService('foo');
+	 * 
+	 * // Will return an instance of FooBar, also works for singletons.
+     * ?>
+	 * ```
+	 * 
+	 * @param  string  $class
+	 * @return mixed
+     * @see Codeception\Module\Laravel4::grabService()
+     * @return \Codeception\Maybe
+     */
+    public function grabService($class) {
+        $this->scenario->addStep(new \Codeception\Step\Action('grabService', func_get_args()));
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
@@ -2227,6 +2266,104 @@ class TestGuy extends \Codeception\AbstractGuy
      * Documentation taken from corresponding module.
      * ----------------------------------------------
      *
+     * Checks that page title contains text.
+     *
+     * ``` php
+     * <?php
+     * $I->seeInTitle('Blog - Post #1');
+     * ?>
+     * ```
+     *
+     * @param $title
+     * @return mixed
+    * Conditional Assertion: Test won't be stopped on fail
+     * @see Codeception\Util\Framework::seeInTitle()
+     * @return \Codeception\Maybe
+     */
+    public function canSeeInTitle($title) {
+        $this->scenario->addStep(new \Codeception\Step\ConditionalAssertion('seeInTitle', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Checks that page title contains text.
+     *
+     * ``` php
+     * <?php
+     * $I->seeInTitle('Blog - Post #1');
+     * ?>
+     * ```
+     *
+     * @param $title
+     * @return mixed
+     * @see Codeception\Util\Framework::seeInTitle()
+     * @return \Codeception\Maybe
+     */
+    public function seeInTitle($title) {
+        $this->scenario->addStep(new \Codeception\Step\Assertion('seeInTitle', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Checks that page title does not contain text.
+     *
+     * @param $title
+     * @return mixed
+    * Conditional Assertion: Test won't be stopped on fail
+     * @see Codeception\Util\Framework::dontSeeInTitle()
+     * @return \Codeception\Maybe
+     */
+    public function cantSeeInTitle($title) {
+        $this->scenario->addStep(new \Codeception\Step\ConditionalAssertion('dontSeeInTitle', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Checks that page title does not contain text.
+     *
+     * @param $title
+     * @return mixed
+     * @see Codeception\Util\Framework::dontSeeInTitle()
+     * @return \Codeception\Maybe
+     */
+    public function dontSeeInTitle($title) {
+        $this->scenario->addStep(new \Codeception\Step\Assertion('dontSeeInTitle', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
      * Inserts SQL record into database. This record will be erased after the test.
      *
      * ``` php
@@ -2237,6 +2374,7 @@ class TestGuy extends \Codeception\AbstractGuy
      *
      * @param $table
      * @param array $data
+     * @return integer $id
      * @see Codeception\Module\Db::haveInDatabase()
      * @return \Codeception\Maybe
      */
