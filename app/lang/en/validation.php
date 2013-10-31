@@ -22,9 +22,9 @@ return array(
     "array"            => "The :attribute must be an array.",
 	"before"           => "The :attribute must be a date before :date.",
 	"between"          => array(
-		"numeric" => "The :attribute must be between :min - :max.",
-		"file"    => "The :attribute must be between :min - :max kilobytes.",
-		"string"  => "The :attribute must be between :min - :max characters.",
+		"numeric" => "The :attribute must be between :min and :max.",
+		"file"    => "The :attribute must be between :min and :max kilobytes.",
+		"string"  => "The :attribute must be between :min and :max characters.",
         "array"   => "The :attribute must have between :min and :max items.",
 	),
 	"confirmed"        => "The :attribute confirmation does not match.",
