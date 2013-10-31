@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "90450edc16035faa984330c44d37e0ac",
+    "hash": "07a1509ead4ba48602d530e4b791c750",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -784,12 +784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "0f3c054dff866aa687ab07572b731fb2ba32e703"
+                "reference": "7f99ac07d38fd367d1f5f85693ae8433738f7f94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0f3c054dff866aa687ab07572b731fb2ba32e703",
-                "reference": "0f3c054dff866aa687ab07572b731fb2ba32e703",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/7f99ac07d38fd367d1f5f85693ae8433738f7f94",
+                "reference": "7f99ac07d38fd367d1f5f85693ae8433738f7f94",
                 "shasum": ""
             },
             "require": {
@@ -839,7 +839,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-10-28 09:41:17"
+            "time": "2013-10-31 21:38:39"
         },
         {
             "name": "nesbot/carbon",
@@ -1869,12 +1869,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Mink.git",
-                "reference": "bbbce14d7e560581bcb8e34483816983bb0b7312"
+                "reference": "b775d021836f97665f245d533e6b5dc4e9845c53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Mink/zipball/bbbce14d7e560581bcb8e34483816983bb0b7312",
-                "reference": "bbbce14d7e560581bcb8e34483816983bb0b7312",
+                "url": "https://api.github.com/repos/Behat/Mink/zipball/b775d021836f97665f245d533e6b5dc4e9845c53",
+                "reference": "b775d021836f97665f245d533e6b5dc4e9845c53",
                 "shasum": ""
             },
             "require": {
@@ -1916,7 +1916,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2013-10-30 11:51:11"
+            "time": "2013-10-31 18:45:53"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -2244,12 +2244,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Goutte.git",
-                "reference": "aea51354c70e1244d887c54a12e49cd6aa41beb4"
+                "reference": "6db1a02449c82f5d7957c5be9d43389306b7468e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Goutte/zipball/aea51354c70e1244d887c54a12e49cd6aa41beb4",
-                "reference": "aea51354c70e1244d887c54a12e49cd6aa41beb4",
+                "url": "https://api.github.com/repos/fabpot/Goutte/zipball/6db1a02449c82f5d7957c5be9d43389306b7468e",
+                "reference": "6db1a02449c82f5d7957c5be9d43389306b7468e",
                 "shasum": ""
             },
             "require": {
@@ -2292,7 +2292,7 @@
             "keywords": [
                 "scraper"
             ],
-            "time": "2013-10-19 07:57:09"
+            "time": "2013-10-31 08:53:55"
         },
         {
             "name": "facebook/webdriver",
@@ -3251,9 +3251,9 @@
         "codeception/codeception": 0,
         "juy/profiler": 20
     },
-    "platform": [
-
-    ],
+    "platform": {
+        "php": ">=5.4.0"
+    },
     "platform-dev": [
 
     ]
