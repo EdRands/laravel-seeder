@@ -1,20 +1,15 @@
 <?php
 
-use Way\Tests\Assert; /* https://github.com/JeffreyWay/Laravel-Test-Helpers#assert-and-should */
-use Way\Tests\Should;
-use Way\Tests\Factory; /* https://github.com/JeffreyWay/Laravel-Test-Helpers#factories */
+use Way\Tests\Assert;
 
-class EnvironmentTest extends TestCase
-{
+class EnvironmentTest extends TestCase {
 
     /**
      * Test if we are in the testing environment.
      *
      * @return void
      */
-    public function testThisIsTestingEnvironment()
-    {
+    public function testThisIsTestingEnvironment() {
         Assert::Same(App::environment(), 'testing');
     }
-
 }
