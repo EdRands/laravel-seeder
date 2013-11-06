@@ -1,8 +1,6 @@
 <?php
 
 return array(
-    // Set this option to false if you are already including jquery in your application to avoid conflicts.
-    'jquery' => true,
-    // Set to true to enable profiling, false to disable
-    'profiler' => true
+    // Set to TRUE to enable profiling, FALSE to disable. NULL to listen to the app.debug value (default)
+    'profiler' => null
 );
