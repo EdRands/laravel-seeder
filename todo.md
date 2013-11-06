@@ -14,5 +14,5 @@
 + Add machine name to development environment in bootstrap/start.php
 + Customize configuration in app/config/*
 + Customize test setup
- + Update url in `app/tests/acceptance.suite.yml`
+ + Update url in `codeception.yml`
 + Delete this todo.md file
