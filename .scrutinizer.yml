@@ -1,0 +1,105 @@
+filter:
+    excluded_paths:
+        - 'vendor/*'
+        - 'app/tests/TestCase.php'
+        - 'app/tests/_helpers/*'
+        - 'app/tests/acceptance/WebGuy.php'
+        - 'app/tests/functional/TestGuy.php'
+        - 'app/tests/unit/CodeGuy.php'
+        - 'app/storage/*'
+        - '_ide_helper.php'
+        - 'artisan'
+        - 'server.php'
+    paths:
+        - 'app/*'
+        - 'bootstrap/*'
+        - 'public/index.php'
+before_commands:
+    - 'composer install --dev -n --prefer-source'
+tools:
+    php_mess_detector:
+        filter:
+            excluded_paths:
+                - 'vendor/*'
+                - 'app/tests/TestCase.php'
+                - 'app/tests/_helpers/*'
+                - 'app/tests/acceptance/WebGuy.php'
+                - 'app/tests/functional/TestGuy.php'
+                - 'app/tests/unit/CodeGuy.php'
+                - 'app/storage/*'
+                - '_ide_helper.php'
+                - 'artisan'
+                - 'server.php'
+        config:
+            controversial_rules: { camel_case_class_name: true, camel_case_method_name: true }
+    php_cs_fixer:
+        filter:
+            excluded_paths:
+                - 'vendor/*'
+                - 'app/tests/TestCase.php'
+                - 'app/tests/_helpers/*'
+                - 'app/tests/acceptance/WebGuy.php'
+                - 'app/tests/functional/TestGuy.php'
+                - 'app/tests/unit/CodeGuy.php'
+                - 'app/storage/*'
+                - '_ide_helper.php'
+                - 'artisan'
+                - 'server.php'
+        config:
+            level: custom
+            fixers: { indentation: true, linefeed: true, trailing_spaces: true, unused_use: true, visibility: true, short_tag: true, php_closing_tag: true, eof_ending: true, include: true, controls_spaces: true, elseif: true }
+    php_code_sniffer:
+        filter:
+            excluded_paths:
+                - 'vendor/*'
+                - 'bootstrap/autoload.php'
+                - 'app/tests/TestCase.php'
+                - 'app/tests/_helpers/*'
+                - 'app/tests/acceptance/WebGuy.php'
+                - 'app/tests/functional/TestGuy.php'
+                - 'app/tests/unit/CodeGuy.php'
+                - 'app/storage/*'
+                - '_ide_helper.php'
+                - 'artisan'
+                - 'server.php'
+        config:
+            sniffs: { generic: { code_analysis: { unused_function_parameter_sniff: true, unconditional_if_statement_sniff: true, for_loop_should_be_while_loop_sniff: true }, white_space: { disallow_tab_indent_sniff: true, scope_indent_sniff: true }, php: { disallow_short_open_tag_sniff: true, lower_case_constant_sniff: true, no_silenced_errors_sniff: true, forbidden_functions_sniff: true }, functions: { function_call_argument_spacing_sniff: true, opening_function_brace_kernighan_ritchie_sniff: true }, files: { byte_order_mark_sniff: true, one_class_per_file_sniff: true, line_endings_sniff: true, end_file_newline_sniff: true }, naming_conventions: { constructor_name_sniff: true, upper_case_constant_name_sniff: true, camel_caps_function_name_sniff: true }, metrics: { nesting_level_sniff: true } }, zend: { debug: { code_analyzer_sniff: true }, files: { closing_tag_sniff: true } }, squiz: { code_analysis: { empty_statement_sniff: true }, classes: { lowercase_class_keywords_sniff: true, valid_class_name_sniff: true, class_file_name_sniff: true }, white_space: { language_construct_spacing_sniff: true, function_opening_brace_space_sniff: true, scope_keyword_spacing_sniff: true, semicolon_spacing_sniff: true, object_operator_spacing_sniff: true, logical_operator_spacing_sniff: true, operator_spacing_sniff: true, cast_spacing_sniff: true }, php: { eval_sniff: true, lowercase_p_h_p_functions_sniff: true, commented_out_code_sniff: true, disallow_size_functions_in_loops_sniff: true }, functions: { lowercase_function_keywords_sniff: true, function_duplicate_argument_sniff: true, global_function_sniff: true, function_declaration_argument_spacing_sniff: true, function_declaration_sniff: true }, commenting: { post_statement_comment_sniff: true }, control_structures: { lowercase_declaration_sniff: true }, strings: { double_quote_usage_sniff: true }, arrays: { array_bracket_spacing_sniff: true } }, my_source: { debug: { debug_code_sniff: true } }, psr2: { classes: { property_declaration_sniff: true }, methods: { method_declaration_sniff: true } } }
+    sensiolabs_security_checker:
+        filter:
+            excluded_paths:
+                - 'vendor/*'
+                - 'app/tests/TestCase.php'
+                - 'app/tests/_helpers/*'
+                - 'app/tests/acceptance/WebGuy.php'
+                - 'app/tests/functional/TestGuy.php'
+                - 'app/tests/unit/CodeGuy.php'
+                - 'app/storage/*'
+                - '_ide_helper.php'
+                - 'artisan'
+                - 'server.php'
+    php_code_coverage:
+        config_path: phpunit.xml
+        filter:
+            excluded_paths:
+                - 'vendor/*'
+                - 'boostrap/*'
+                - 'public/*'
+                - 'app/tests/TestCase.php'
+                - 'app/tests/_helpers/*'
+                - 'app/tests/acceptance/WebGuy.php'
+                - 'app/tests/functional/TestGuy.php'
+                - 'app/tests/unit/CodeGuy.php'
+                - 'app/storage/*'
+                - '_ide_helper.php'
+                - 'artisan'
+                - 'server.php'
+    php_pdepend:
+        excluded_dirs:
+            - 'vendor'
+            - 'app/tests'
+            - 'app/storage'
+    php_loc:
+        excluded_dirs:
+            - 'vendor'
+            - 'app/tests'
+            - 'app/storage'
