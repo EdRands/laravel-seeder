@@ -1,6 +1,6 @@
 # Enhanced Laravel Project Seeder
 
-[![Latest Stable Version](https://poser.pugx.org/edrands/laravel-seeder/v/stable.png)](https://packagist.org/packages/edrands/laravel-seeder) [![Build Status](https://travis-ci.org/edrands/laravel-seeder.png?branch=master)](https://travis-ci.org/edrands/laravel-seeder)
+[![Latest Stable Version](https://poser.pugx.org/edrands/laravel-seeder/v/stable.png)](https://packagist.org/packages/edrands/laravel-seeder) [![Build Status](https://travis-ci.org/edrands/laravel-seeder.png?branch=master)](https://travis-ci.org/edrands/laravel-seeder) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/edrands/laravel-seeder/badges/quality-score.png?s=75ec6e8d1c51dc7aba66ee8c87f187b9ef64a40f)](https://scrutinizer-ci.com/g/edrands/laravel-seeder/) [![Code Coverage](https://scrutinizer-ci.com/g/edrands/laravel-seeder/badges/coverage.png?s=0d9d11d55dd5204facec96ee1add14de0f22c6e2)](https://scrutinizer-ci.com/g/edrands/laravel-seeder/)
 
 ## About the Enhanced Laravel Project Seeder
 
@@ -15,6 +15,8 @@ This is meant mostly for my benefit, but if it's helpful to you, you're welcome 
 [Laravel 4.0](http://laravel.com/), of course. Wouldn't be much of a Laravel project seeder without that.
 
 Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes [Codeception](http://codeception.com/), [Mockery](https://github.com/padraic/mockery) and [Hamcrest](https://github.com/davedevelopment/hamcrest-php). These tools make testing easier, almost fun, and therefore more likely testing will actually happen.
+
+Continuous integration is a great way to automate testing and maintenance. Configuration files for several CI services are included. [Travis](https://travis-ci.org) runs all the tests on push and pull requests. [Scrutinizer](https://scrutinizer-ci.com) runs a variety of scripts to check your code for security holes, sloppy code, and coding style problems. Keep in mind you still need to turn each service on for your project.
 
 IDEs and code editors don't really understand the Laravel facade system, and so they have trouble giving you code suggestions and documentation for a lot of Laravel's functionality. To compensate for this, the [Laravel IDE Helper Generator](https://github.com/barryvdh/laravel-ide-helper) is included. Each time you update in Composer, a helper file is generated that your editor can understand.
 
@@ -81,6 +83,7 @@ A description of this project, what it's about, what it does, how it works and w
 
 ## Technologies
 
++ [PHP](http://www.php.net/) 5.4+
 + [Laravel Framework](http://laravel.com/)
 
 ## Standards

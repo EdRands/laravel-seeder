@@ -784,12 +784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "7f99ac07d38fd367d1f5f85693ae8433738f7f94"
+                "reference": "a5010756d905264ea2b3f7f27c7df22fb9a3bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/7f99ac07d38fd367d1f5f85693ae8433738f7f94",
-                "reference": "7f99ac07d38fd367d1f5f85693ae8433738f7f94",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5010756d905264ea2b3f7f27c7df22fb9a3bd8e",
+                "reference": "a5010756d905264ea2b3f7f27c7df22fb9a3bd8e",
                 "shasum": ""
             },
             "require": {
@@ -839,7 +839,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-10-31 21:38:39"
+            "time": "2013-11-04 08:48:35"
         },
         {
             "name": "nesbot/carbon",
@@ -931,16 +931,16 @@
         },
         {
             "name": "patchwork/utf8",
-            "version": "v1.1.13",
+            "version": "v1.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nicolas-grekas/Patchwork-UTF8.git",
-                "reference": "92376c92e7edc281a2ca4e3384f3da9237415db6"
+                "reference": "af1d74b154bc62fab79b428877a9b5ab15f9418a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicolas-grekas/Patchwork-UTF8/zipball/92376c92e7edc281a2ca4e3384f3da9237415db6",
-                "reference": "92376c92e7edc281a2ca4e3384f3da9237415db6",
+                "url": "https://api.github.com/repos/nicolas-grekas/Patchwork-UTF8/zipball/af1d74b154bc62fab79b428877a9b5ab15f9418a",
+                "reference": "af1d74b154bc62fab79b428877a9b5ab15f9418a",
                 "shasum": ""
             },
             "require": {
@@ -978,7 +978,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2013-10-12 09:48:20"
+            "time": "2013-11-04 16:58:59"
         },
         {
             "name": "predis/predis",
@@ -986,12 +986,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "4824af15631f6a80a939cdc58104d03e0aadd17a"
+                "reference": "695b6dd7b315a828a778a421037c85e718fb9054"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/4824af15631f6a80a939cdc58104d03e0aadd17a",
-                "reference": "4824af15631f6a80a939cdc58104d03e0aadd17a",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/695b6dd7b315a828a778a421037c85e718fb9054",
+                "reference": "695b6dd7b315a828a778a421037c85e718fb9054",
                 "shasum": ""
             },
             "require": {
@@ -1025,7 +1025,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-08-31 08:51:10"
+            "time": "2013-11-02 17:52:43"
         },
         {
             "name": "psr/log",
@@ -2030,12 +2030,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/MinkSelenium2Driver.git",
-                "reference": "807ee0bff5918bb7995c93a023fd5c5fcb81bfba"
+                "reference": "2e73d8134ec8526b6e742f05c146fec2d5e1b8d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkSelenium2Driver/zipball/807ee0bff5918bb7995c93a023fd5c5fcb81bfba",
-                "reference": "807ee0bff5918bb7995c93a023fd5c5fcb81bfba",
+                "url": "https://api.github.com/repos/Behat/MinkSelenium2Driver/zipball/2e73d8134ec8526b6e742f05c146fec2d5e1b8d6",
+                "reference": "2e73d8134ec8526b6e742f05c146fec2d5e1b8d6",
                 "shasum": ""
             },
             "require": {
@@ -2080,20 +2080,20 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2013-10-28 09:20:55"
+            "time": "2013-11-04 21:23:47"
         },
         {
             "name": "codeception/codeception",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "a6f6413bab11a631c9c767a76c80e942b3ec8a6e"
+                "reference": "0f5fc9957ceca59039f742df2dc98722b3e33ac4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/a6f6413bab11a631c9c767a76c80e942b3ec8a6e",
-                "reference": "a6f6413bab11a631c9c767a76c80e942b3ec8a6e",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/0f5fc9957ceca59039f742df2dc98722b3e33ac4",
+                "reference": "0f5fc9957ceca59039f742df2dc98722b3e33ac4",
                 "shasum": ""
             },
             "require": {
@@ -2144,7 +2144,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2013-10-16 22:56:44"
+            "time": "2013-11-01 22:26:04"
         },
         {
             "name": "davedevelopment/hamcrest-php",
@@ -2733,12 +2733,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "466e7cd2554b4e264c9e3f31216d25ac0e5f3d94"
+                "reference": "10c5b2c8b72a801eaad0031cd6a6a3686909c5a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/466e7cd2554b4e264c9e3f31216d25ac0e5f3d94",
-                "reference": "466e7cd2554b4e264c9e3f31216d25ac0e5f3d94",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/10c5b2c8b72a801eaad0031cd6a6a3686909c5a9",
+                "reference": "10c5b2c8b72a801eaad0031cd6a6a3686909c5a9",
                 "shasum": ""
             },
             "require": {
@@ -2786,7 +2786,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-09-10 08:14:32"
+            "time": "2013-11-01 09:17:11"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2977,12 +2977,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "598a467a7d234dd78788cd72d5fd58105a1dfd0e"
+                "reference": "5f4db6c56e53171370300974e47964003b477b1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/598a467a7d234dd78788cd72d5fd58105a1dfd0e",
-                "reference": "598a467a7d234dd78788cd72d5fd58105a1dfd0e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5f4db6c56e53171370300974e47964003b477b1d",
+                "reference": "5f4db6c56e53171370300974e47964003b477b1d",
                 "shasum": ""
             },
             "require": {
@@ -3043,7 +3043,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-10-17 23:32:19"
+            "time": "2013-11-05 09:25:53"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
