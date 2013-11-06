@@ -69,11 +69,10 @@ ECHO.
 ECHO Putting Composer to work...
 ECHO.
 
-CMD /C %COMPOSERLOC% create-project edrands/laravel-seeder %SEEDPROJECTDIR%
+CMD /C %COMPOSERLOC% create-project edrands/laravel-seeder %SEEDPROJECTDIR% --stability=stable
 
 ECHO.
 ECHO If Composer didn't show you any errors, we have planted the seed!
-ECHO If Composer did error, 
 
 
 :end
