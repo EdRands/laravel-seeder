@@ -11,7 +11,7 @@ return array(
       | has failed, such as for an invalid token or invalid new password.
       |
      */
-    "password" => "Passwords must be at least six characters long and match the confirmation.",
-    "user" => "We can't find a user with that e-mail address.",
-    "token" => "This password reset token is invalid.",
+    'password' => 'Passwords must be at least six characters long and match the confirmation.',
+    'user' => "We can't find a user with that e-mail address.",
+    'token' => 'This password reset token is invalid.',
 );
