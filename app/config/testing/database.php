@@ -1,12 +1,12 @@
 <?php
 
 return array(
-    'default' => 'memory',
+    'default'     => 'memory',
     'connections' => array(
         'memory' => array(
-            'driver' => 'sqlite',
+            'driver'   => 'sqlite',
             'database' => ':memory:',
-            'prefix' => '',
+            'prefix'   => '',
         ),
     ),
 );
