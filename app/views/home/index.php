@@ -22,25 +22,6 @@
                 margin-left: -250px;
                 margin-top: -150px;
             }
-
-            a, a:visited {
-                color:#FF5949;
-                text-decoration:none;
-            }
-
-            a:hover {
-                text-decoration:underline;
-            }
-
-            ul li {
-                display:inline;
-                margin:0 1.2em;
-            }
-
-            p {
-                margin:2em 0;
-                color:#555;
-            }
         </style>
     </head>
     <body>
