@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Enhanced Laravel Project Seeder Installed</title>
+        <title><?php echo Config::get('project.name.full', 'Untitled Project'); ?> Sprouted</title>
         <style>
             @import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
 
@@ -27,8 +27,8 @@
     <body>
         <div class="welcome">
             <a href="http://laravel.com" title="Laravel PHP Framework"><img src="<?php echo asset('img/laravel-logo.png'); ?>" height="135" width="135" alt="Laravel logo"></a>
-            <h1>The Enhanced Laravel Project Seeder is up and running.</h1>
-            <h2>Now get to work!</h2>
+            <h1><?php echo Config::get('project.name.full', 'Untitled Project'); ?><br>is planted and sprouted.</h1>
+            <h2>Now let's get growing!</h2>
         </div>
     </body>
 </html>
