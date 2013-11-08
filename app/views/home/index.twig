@@ -33,26 +33,14 @@
             </div>
         </div>
 
-        <div class="jumbotron">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3 col-md-2 col-lg-1 text-center">
-                        <a href="http://laravel.com" title="Laravel PHP Framework">
-                            <img src="{{ asset('img/laravel-logo.png') }}" height="135" width="135" alt="Laravel logo">
-                        </a>
-                    </div>
-                    <div class="col-sm-9 col-md-10 col-lg-11 text-center text-success">
-                        <h1>{{ config('project.name.full')|default('Untitled Project') }}</h1>
-                        <p class="lead">{{ config('project.name.full')|default('Untitled Project') }} is planted and sprouted. Now let's get growing!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
+        <div class="container text-center">
+            <p><img src="{{ asset('img/sprout.png') }}" height="256" width="256" alt="Sprouted plant"></p>
+            <h1>{{ config('project.name.full')|default('Untitled Project') }}</h1>
+            <p class="lead">{{ config('project.name.full')|default('Untitled Project') }} is planted and sprouted. Now let's get growing!</p>
             <hr>
-            <footer>
-                <p class="small">Copyright &copy; {{ 'now'|date('Y') }} {{ config('project.copyrightHolder') }}</p>
+            <footer class="small">
+                <p>Copyright &copy; {{ 'now'|date('Y') }} {{ config('project.copyrightHolder') }}</p>
+                <p>Sprout image by Bruno Maia, <a href="http://www.icontexto.com">IconTexto</a></p>
             </footer>
         </div>
 
