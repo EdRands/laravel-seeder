@@ -1,34 +1,63 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js">
     <head>
-        <meta charset="UTF-8">
-        <title>{{ config('project.name.short')|default('Project') }} Sprouted</title>
-        <style>
-            @import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ config('project.name.short')|default('Project') }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            body {
-                margin:0;
-                font-family:'Lato', sans-serif;
-                text-align:center;
-                color: #999;
-            }
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-3.0.2.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-theme.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome-4.0.3.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-            .welcome {
-                width: 500px;
-                height: 300px;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-left: -250px;
-                margin-top: -150px;
-            }
-        </style>
+        <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
     </head>
     <body>
-        <div class="welcome">
-            <a href="http://laravel.com" title="Laravel PHP Framework"><img src="{{ asset('img/laravel-logo.png') }}" height="135" width="135" alt="Laravel logo"></a>
-            <h1>{{ config('project.name.full')|default('Untitled Project') }}<br>is planted and sprouted.</h1>
-            <h2>Now let's get growing!</h2>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">{{ config('project.name.short')|default('Project') }}</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-md-2 col-lg-1 text-center">
+                        <a href="http://laravel.com" title="Laravel PHP Framework">
+                            <img src="{{ asset('img/laravel-logo.png') }}" height="135" width="135" alt="Laravel logo">
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-10 col-lg-11 text-center text-success">
+                        <h1>{{ config('project.name.full')|default('Untitled Project') }}</h1>
+                        <p class="lead">{{ config('project.name.full')|default('Untitled Project') }} is planted and sprouted. Now let's get growing!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <hr>
+            <footer>
+                <p class="small">Copyright &copy; {{ 'now'|date('Y') }} {{ config('project.copyrightHolder') }}</p>
+            </footer>
+        </div>
+
+        <script src="{{ asset('js/vendor/jquery-2.0.3.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/bootstrap-3.0.2.min.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
