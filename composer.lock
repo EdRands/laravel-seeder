@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "07a1509ead4ba48602d530e4b791c750",
+    "hash": "5ec440e1d5f18285c6e22d803ec92cdf",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -986,12 +986,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "695b6dd7b315a828a778a421037c85e718fb9054"
+                "reference": "62f8730f1aa0e6a6879eaee73819a3a0b57f8dab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/695b6dd7b315a828a778a421037c85e718fb9054",
-                "reference": "695b6dd7b315a828a778a421037c85e718fb9054",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/62f8730f1aa0e6a6879eaee73819a3a0b57f8dab",
+                "reference": "62f8730f1aa0e6a6879eaee73819a3a0b57f8dab",
                 "shasum": ""
             },
             "require": {
@@ -1025,7 +1025,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-11-02 17:52:43"
+            "time": "2013-11-07 17:48:53"
         },
         {
             "name": "psr/log",
@@ -1064,6 +1064,57 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "rcrowe/twigbridge",
+            "version": "0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rcrowe/TwigBridge.git",
+                "reference": "fdc2b42a3230c725412c3aff4cf0eb0fa2209732"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rcrowe/TwigBridge/zipball/fdc2b42a3230c725412c3aff4cf0eb0fa2209732",
+                "reference": "fdc2b42a3230c725412c3aff4cf0eb0fa2209732",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "twig/twig": "1.*"
+            },
+            "require-dev": {
+                "illuminate/filesystem": "4.0.*",
+                "illuminate/foundation": "4.0.*",
+                "mockery/mockery": "0.7.2"
+            },
+            "suggest": {
+                "twig/extensions": "1.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "TwigBridge": "src/",
+                    "TwigBridgeTests": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Crowe",
+                    "email": "hello@vivalacrowe.com",
+                    "homepage": "http://vivalacrowe.com"
+                }
+            ],
+            "description": "Adds the power of Twig to Illuminate / Laravel 4",
+            "keywords": [
+                "laravel",
+                "twig"
+            ],
+            "time": "2013-09-22 15:52:44"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1537,12 +1588,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "1bee3412d9ff603a9ed1cce305c0becbd735c307"
+                "reference": "796619f49371629db8f5ef5ce82f2f52e4fdfd9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/1bee3412d9ff603a9ed1cce305c0becbd735c307",
-                "reference": "1bee3412d9ff603a9ed1cce305c0becbd735c307",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/796619f49371629db8f5ef5ce82f2f52e4fdfd9d",
+                "reference": "796619f49371629db8f5ef5ce82f2f52e4fdfd9d",
                 "shasum": ""
             },
             "require": {
@@ -1578,7 +1629,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-10-30 08:28:22"
+            "time": "2013-11-04 06:09:51"
         },
         {
             "name": "symfony/http-kernel",
@@ -1810,6 +1861,55 @@
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
             "time": "2013-10-10 13:12:30"
+        },
+        {
+            "name": "twig/twig",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabpot/Twig.git",
+                "reference": "cf21274a00b402d9b54b7478bedb040ce6befc56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/cf21274a00b402d9b54b7478bedb040ce6befc56",
+                "reference": "cf21274a00b402d9b54b7478bedb040ce6befc56",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2013-11-06 10:15:23"
         }
     ],
     "packages-dev": [
@@ -2296,20 +2396,20 @@
         },
         {
             "name": "facebook/webdriver",
-            "version": "v0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/php-webdriver.git",
-                "reference": "b720b6aafb667a463c7e7cafcdebf3210ddc5ef7"
+                "reference": "22051a3eb793f02daa7a0cf7a114ca80763b446c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/b720b6aafb667a463c7e7cafcdebf3210ddc5ef7",
-                "reference": "b720b6aafb667a463c7e7cafcdebf3210ddc5ef7",
+                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/22051a3eb793f02daa7a0cf7a114ca80763b446c",
+                "reference": "22051a3eb793f02daa7a0cf7a114ca80763b446c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.3.19"
             },
             "type": "library",
             "autoload": {
@@ -2323,7 +2423,7 @@
             ],
             "description": "A php client for WebDriver",
             "homepage": "https://github.com/facebook/php-webdriver",
-            "time": "2013-10-10 02:34:59"
+            "time": "2013-11-07 08:09:13"
         },
         {
             "name": "guzzle/common",
@@ -2977,12 +3077,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "5f4db6c56e53171370300974e47964003b477b1d"
+                "reference": "236f65cc97d6beaa8fcb8a27b19bd278f3912677"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5f4db6c56e53171370300974e47964003b477b1d",
-                "reference": "5f4db6c56e53171370300974e47964003b477b1d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/236f65cc97d6beaa8fcb8a27b19bd278f3912677",
+                "reference": "236f65cc97d6beaa8fcb8a27b19bd278f3912677",
                 "shasum": ""
             },
             "require": {
@@ -3043,7 +3143,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-11-05 09:25:53"
+            "time": "2013-11-06 01:58:51"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
