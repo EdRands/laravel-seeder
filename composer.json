@@ -7,6 +7,7 @@
     "require": {
         "php": ">=5.4.0",
         "rcrowe/twigbridge": "0.5.*",
+        "patricktalmadge/bootstrapper": "dev-develop",
         "laravel/framework": "4.0.9"
     },
     "require-dev": {
