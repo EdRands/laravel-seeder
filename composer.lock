@@ -3,8 +3,87 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5ec440e1d5f18285c6e22d803ec92cdf",
+    "hash": "2f3f8203e4ecb08f97b5a78814253bba",
     "packages": [
+        {
+            "name": "anahkiasen/html-object",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Anahkiasen/html-object.git",
+                "reference": "bb57e95132c794510abbd5712ca04075f2e03f3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Anahkiasen/html-object/zipball/bb57e95132c794510abbd5712ca04075f2e03f3b",
+                "reference": "bb57e95132c794510abbd5712ca04075f2e03f3b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HtmlObject": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Fabre",
+                    "email": "ehtnam6@gmail.com"
+                }
+            ],
+            "description": "A set of classes to create and manipulate HTML objects abstractions",
+            "time": "2013-11-05 17:40:28"
+        },
+        {
+            "name": "anahkiasen/underscore-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Anahkiasen/underscore-php.git",
+                "reference": "049a491701a2ee1c15f82f4c502bbe87671d1619"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Anahkiasen/underscore-php/zipball/049a491701a2ee1c15f82f4c502bbe87671d1619",
+                "reference": "049a491701a2ee1c15f82f4c502bbe87671d1619",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~4",
+                "patchwork/utf8": "1.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Underscore": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Fabre",
+                    "email": "ehtnam6@gmail.com"
+                }
+            ],
+            "description": "A redacted port of Underscore.js for PHP",
+            "keywords": [
+                "internals",
+                "laravel",
+                "toolkit"
+            ],
+            "time": "2013-07-15 09:18:39"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "1.0.1",
@@ -618,6 +697,75 @@
             "time": "2013-04-30 19:58:08"
         },
         {
+            "name": "jasonlewis/basset",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jasonlewis/basset.git",
+                "reference": "79b94c3edef5015a34e3a0f834586358a6f99885"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jasonlewis/basset/zipball/79b94c3edef5015a34e3a0f834586358a6f99885",
+                "reference": "79b94c3edef5015a34e3a0f834586358a6f99885",
+                "shasum": ""
+            },
+            "require": {
+                "kriswallsmith/assetic": "1.1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/config": "4.0.*",
+                "illuminate/console": "4.0.*",
+                "illuminate/filesystem": "4.0.*",
+                "illuminate/log": "4.0.*",
+                "illuminate/routing": "4.0.*",
+                "illuminate/support": "4.0.*",
+                "mockery/mockery": ">=0.7.2",
+                "symfony/process": "2.3.*"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Deploy static assets directly to your S3 buckets.",
+                "rackspace/php-cloudfiles": "Deploy static assets directly to your Cloud Files container."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Basset": "src/"
+                },
+                "classmap": [
+                    "tests/Cases/FilterTestCase.php"
+                ],
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Lewis",
+                    "email": "jason.lewis1991@gmail.com",
+                    "homepage": "http://jasonlewis.me",
+                    "role": "Creator"
+                }
+            ],
+            "description": "A better asset management package for Laravel.",
+            "keywords": [
+                "assets",
+                "basset",
+                "laravel"
+            ],
+            "time": "2013-11-06 08:17:47"
+        },
+        {
             "name": "jeremeamia/SuperClosure",
             "version": "1.0.1",
             "source": {
@@ -664,6 +812,77 @@
                 "tokenizer"
             ],
             "time": "2013-10-09 04:20:00"
+        },
+        {
+            "name": "kriswallsmith/assetic",
+            "version": "1.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/assetic.git",
+                "reference": "1d671c54f147ece319642132330927672b6190a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/1d671c54f147ece319642132330927672b6190a7",
+                "reference": "1d671c54f147ece319642132330927672b6190a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1",
+                "symfony/process": "~2.1"
+            },
+            "require-dev": {
+                "cssmin/cssmin": "*",
+                "joliclic/javascript-packer": "*",
+                "kamicane/packager": "*",
+                "leafo/lessphp": "*",
+                "leafo/scssphp": "*",
+                "leafo/scssphp-compass": "*",
+                "mrclay/minify": "*",
+                "phpunit/phpunit": "~3.7",
+                "ptachoire/cssembed": "*",
+                "twig/twig": "~1.6"
+            },
+            "suggest": {
+                "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+                "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+                "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+                "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+                "twig/twig": "Assetic provides the integration with the Twig templating engine"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Assetic": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Asset Management for PHP",
+            "homepage": "https://github.com/kriswallsmith/assetic",
+            "keywords": [
+                "assets",
+                "compression",
+                "minification"
+            ],
+            "time": "2013-09-03 12:44:05"
         },
         {
             "name": "laravel/framework",
@@ -979,6 +1198,62 @@
                 "utf8"
             ],
             "time": "2013-11-04 16:58:59"
+        },
+        {
+            "name": "patricktalmadge/bootstrapper",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/patricktalmadge/bootstrapper.git",
+                "reference": "208d9a919d886d0252e37bbf748e1e9b8c39df5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/patricktalmadge/bootstrapper/zipball/208d9a919d886d0252e37bbf748e1e9b8c39df5e",
+                "reference": "208d9a919d886d0252e37bbf748e1e9b8c39df5e",
+                "shasum": ""
+            },
+            "require": {
+                "anahkiasen/html-object": "dev-master",
+                "anahkiasen/underscore-php": "dev-master",
+                "illuminate/html": ">=4.0.0",
+                "illuminate/support": ">=4.0.0",
+                "jasonlewis/basset": "dev-master",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Bootstrapper": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Fabre",
+                    "email": "ehtnam6@gmail.com"
+                },
+                {
+                    "name": "Patrick Talmadge",
+                    "email": "ptalmadge@gmail.com"
+                },
+                {
+                    "name": "Patrick Rose",
+                    "email": "pjr0911025@gmail.com"
+                }
+            ],
+            "description": "Twitter Bootstrap markup generator",
+            "keywords": [
+                "bootstrap",
+                "laravel"
+            ],
+            "time": "2013-11-03 17:51:06"
         },
         {
             "name": "predis/predis",
@@ -3345,6 +3620,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "patricktalmadge/bootstrapper": 20,
         "way/laravel-test-helpers": 20,
         "mockery/mockery": 20,
         "davedevelopment/hamcrest-php": 20,
