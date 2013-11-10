@@ -1261,12 +1261,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "62f8730f1aa0e6a6879eaee73819a3a0b57f8dab"
+                "reference": "b1a51b2ef900c28f389cc7ba498f3698b9749ce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/62f8730f1aa0e6a6879eaee73819a3a0b57f8dab",
-                "reference": "62f8730f1aa0e6a6879eaee73819a3a0b57f8dab",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/b1a51b2ef900c28f389cc7ba498f3698b9749ce6",
+                "reference": "b1a51b2ef900c28f389cc7ba498f3698b9749ce6",
                 "shasum": ""
             },
             "require": {
@@ -1300,7 +1300,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-11-07 17:48:53"
+            "time": "2013-11-09 19:00:33"
         },
         {
             "name": "psr/log",
@@ -1502,12 +1502,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "f880062d56edefb25b36f2defa65aafe65959dc7"
+                "reference": "38f924338419db1ce147ef39fff1265ee64faa81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/f880062d56edefb25b36f2defa65aafe65959dc7",
-                "reference": "f880062d56edefb25b36f2defa65aafe65959dc7",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/38f924338419db1ce147ef39fff1265ee64faa81",
+                "reference": "38f924338419db1ce147ef39fff1265ee64faa81",
                 "shasum": ""
             },
             "require": {
@@ -1546,7 +1546,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-25 06:04:15"
+            "time": "2013-11-05 15:14:13"
         },
         {
             "name": "symfony/css-selector",
@@ -2675,12 +2675,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/php-webdriver.git",
-                "reference": "22051a3eb793f02daa7a0cf7a114ca80763b446c"
+                "reference": "dd30a29091b50c0277c8bd54a336239a1bde9884"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/22051a3eb793f02daa7a0cf7a114ca80763b446c",
-                "reference": "22051a3eb793f02daa7a0cf7a114ca80763b446c",
+                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/dd30a29091b50c0277c8bd54a336239a1bde9884",
+                "reference": "dd30a29091b50c0277c8bd54a336239a1bde9884",
                 "shasum": ""
             },
             "require": {
@@ -2698,7 +2698,7 @@
             ],
             "description": "A php client for WebDriver",
             "homepage": "https://github.com/facebook/php-webdriver",
-            "time": "2013-11-07 08:09:13"
+            "time": "2013-11-09 21:20:19"
         },
         {
             "name": "guzzle/common",
@@ -3008,12 +3008,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/padraic/mockery.git",
-                "reference": "09ab879a09def2a658d6e8030f88432cc479f5a8"
+                "reference": "7c0f01b0d88f8c4b56281043a0a572bfe0b3d7f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/09ab879a09def2a658d6e8030f88432cc479f5a8",
-                "reference": "09ab879a09def2a658d6e8030f88432cc479f5a8",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/7c0f01b0d88f8c4b56281043a0a572bfe0b3d7f3",
+                "reference": "7c0f01b0d88f8c4b56281043a0a572bfe0b3d7f3",
                 "shasum": ""
             },
             "require": {
@@ -3054,7 +3054,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2013-10-18 15:18:30"
+            "time": "2013-11-08 14:43:01"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
