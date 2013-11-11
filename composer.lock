@@ -1003,12 +1003,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "a5010756d905264ea2b3f7f27c7df22fb9a3bd8e"
+                "reference": "eea4d089e70b082a037c57e9e0e35225368f97da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5010756d905264ea2b3f7f27c7df22fb9a3bd8e",
-                "reference": "a5010756d905264ea2b3f7f27c7df22fb9a3bd8e",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/eea4d089e70b082a037c57e9e0e35225368f97da",
+                "reference": "eea4d089e70b082a037c57e9e0e35225368f97da",
                 "shasum": ""
             },
             "require": {
@@ -1019,14 +1019,16 @@
                 "doctrine/couchdb": "dev-master",
                 "mlehner/gelf-php": "1.0.*",
                 "phpunit/phpunit": "~3.7.0",
-                "raven/raven": "0.5.*"
+                "raven/raven": "0.5.*",
+                "ruflin/elastica": "0.90.*"
             },
             "suggest": {
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
                 "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "raven/raven": "Allow sending log messages to a Sentry server"
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
@@ -1058,7 +1060,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-11-04 08:48:35"
+            "time": "2013-11-11 21:23:23"
         },
         {
             "name": "nesbot/carbon",
@@ -2143,12 +2145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "cf21274a00b402d9b54b7478bedb040ce6befc56"
+                "reference": "10da58c83b13d6f800aebb72b515c1134d75f2af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/cf21274a00b402d9b54b7478bedb040ce6befc56",
-                "reference": "cf21274a00b402d9b54b7478bedb040ce6befc56",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/10da58c83b13d6f800aebb72b515c1134d75f2af",
+                "reference": "10da58c83b13d6f800aebb72b515c1134d75f2af",
                 "shasum": ""
             },
             "require": {
@@ -2184,7 +2186,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-11-06 10:15:23"
+            "time": "2013-11-11 19:04:42"
         }
     ],
     "packages-dev": [
@@ -2619,12 +2621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Goutte.git",
-                "reference": "6db1a02449c82f5d7957c5be9d43389306b7468e"
+                "reference": "cff6881c93791edbfef88928ca6b1dfcf60d3273"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Goutte/zipball/6db1a02449c82f5d7957c5be9d43389306b7468e",
-                "reference": "6db1a02449c82f5d7957c5be9d43389306b7468e",
+                "url": "https://api.github.com/repos/fabpot/Goutte/zipball/cff6881c93791edbfef88928ca6b1dfcf60d3273",
+                "reference": "cff6881c93791edbfef88928ca6b1dfcf60d3273",
                 "shasum": ""
             },
             "require": {
@@ -2667,7 +2669,7 @@
             "keywords": [
                 "scraper"
             ],
-            "time": "2013-10-31 08:53:55"
+            "time": "2013-11-11 19:09:12"
         },
         {
             "name": "facebook/webdriver",
