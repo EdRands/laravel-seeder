@@ -101,7 +101,6 @@ return array(
         'Illuminate\Validation\ValidationServiceProvider',
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
-        'TwigBridge\TwigServiceProvider',
         'Bootstrapper\BootstrapperServiceProvider',
         /* Development service providers */
         'Juy\Profiler\Providers\ProfilerServiceProvider',

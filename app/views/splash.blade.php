@@ -1,11 +1,11 @@
-{% extends "base.twig" %}
+@extends('layout.main')
 
-{% block title %}Seeded{% endblock title %}
+<?php $pageTitle = 'Seeded'; ?>
 
-{% block content %}
+@section('content')
 <div class="container text-center">
     <p><img src="{{ asset('img/sprout.png') }}" height="256" width="256" alt="Sprouted plant"></p>
-    <h1>{{ config('project.name.full')|default('Untitled Project') }}</h1>
-    <p class="lead">{{ config('project.name.full')|default('Untitled Project') }} is planted and sprouted. Now let's get growing!</p>
+    <h1>{{ Config::get('project.name.full', 'Untitled Project') }}</h1>
+    <p class="lead">{{ Config::get('project.name.full', 'Untitled Project') }} is planted and sprouted. Now let's get growing!</p>
 </div>
-{% endblock content %}
+@stop
