@@ -31,9 +31,8 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
         'Bootstrapper\BootstrapperServiceProvider',
-        /* Development service providers */
-        'Juy\Profiler\Providers\ProfilerServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
     ),
 
     'aliases' => array(
@@ -95,7 +94,6 @@ return array(
         'Thumbnail' => 'Bootstrapper\\Thumbnail',
         'Typeahead' => 'Bootstrapper\\Typeahead',
         'Typography' => 'Bootstrapper\\Typography',
-        /* Development aliases */
-        'Profiler' => 'Juy\Profiler\Facades\Profiler',
+        'Debugbar' => 'Barryvdh\Debugbar\Facade',
     ),
 );
