@@ -11,4 +11,4 @@
   |
  */
 
-Route::get('/', 'SplashController@splash');
+Route::get('/', array ('as' => 'home', 'uses' => 'SplashController@splash'));

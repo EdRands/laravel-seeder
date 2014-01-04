@@ -12,6 +12,7 @@ return array(
       |
      */
     'password' => 'Passwords must be at least six characters long and match the confirmation.',
-    'user' => "We can't find a user with that e-mail address.",
+    'user' => 'We can&rsquo;t find a user with that e-mail address.',
     'token' => 'This password reset token is invalid.',
+    'sent' => 'Password reminder sent!',
 );

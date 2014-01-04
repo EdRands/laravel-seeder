@@ -13,23 +13,21 @@
 
 $app = new Illuminate\Foundation\Application;
 
-$app->redirectIfTrailingSlash();
-
 /*
   |--------------------------------------------------------------------------
   | Detect The Application Environment
   |--------------------------------------------------------------------------
   |
   | Laravel takes a dead simple approach to your application environments
-  | so you can just specify a machine name or HTTP host that matches a
-  | given environment, then we will automatically detect it for you.
+  | so you can just specify a machine name (as returned by PHP's gethostname() function)
+  | for the host that matches a given environment, then we will automatically detect it for you.
   |
  */
 
 $env = $app->detectEnvironment(array(
-    'development' => array('*.dev', 'ELaptop'),
-    'testing'     => array('localhost', '*travis-ci*'),
-    ));
+    'develop' => array('ELAPTOP'),
+    'testing' => array('localhost', '*travis-ci*'),
+));
 
 /*
   |--------------------------------------------------------------------------

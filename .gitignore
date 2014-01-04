@@ -6,9 +6,6 @@
 Thumbs.db
 ehthumbs.db
 
-# Folder config file
-desktop.ini
-
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
@@ -40,6 +37,11 @@ composer.phar
 ## NetBeans IDE
 #############
 /nbproject/private/
+
+#############
+## PhpStorm IDE
+#############
+/.idea/workspace.xml
 
 
 #############

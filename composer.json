@@ -6,16 +6,17 @@
     "type": "project",
     "require": {
         "php": ">=5.4.0",
-        "rcrowe/twigbridge": "0.5.*",
         "patricktalmadge/bootstrapper": "dev-develop",
-        "laravel/framework": "4.0.9"
+        "laravel/framework": "4.1.*@stable"
     },
     "require-dev": {
         "way/laravel-test-helpers": "dev-master",
         "mockery/mockery": "dev-master@dev",
         "davedevelopment/hamcrest-php": "dev-master",
-        "codeception/codeception": "@stable",
-        "juy/profiler": "dev-master",
+        "codeception/codeception": "1.*@stable",
+        "phpmd/phpmd": "1.*@stable",
+        "squizlabs/php_codesniffer": "1.*@stable",
+        "barryvdh/laravel-debugbar": "1.*",
         "barryvdh/laravel-ide-helper": "1.*"
     },
     "autoload": {
@@ -30,13 +31,14 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php artisan ide-helper:generate",
-            "php artisan optimize"
+            "php artisan ide-helper:generate --env=develop",
+            "php artisan optimize --env=develop"
         ],
         "post-update-cmd": [
-            "php artisan clear-compiled",
-            "php artisan ide-helper:generate",
-            "php artisan optimize"
+            "php artisan clear-compiled --env=develop",
+            "php artisan ide-helper:generate --env=develop",
+            "php artisan debugbar:publish --env=develop",
+            "php artisan optimize --env=develop"
         ],
         "post-create-project-cmd": [
             "php artisan key:generate"
