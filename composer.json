@@ -15,6 +15,7 @@
         "davedevelopment/hamcrest-php": "dev-master",
         "codeception/codeception": "1.*@stable",
         "phpmd/phpmd": "1.*@stable",
+        "squizlabs/php_codesniffer": "1.*@stable",
         "barryvdh/laravel-debugbar": "1.*",
         "barryvdh/laravel-ide-helper": "1.*"
     },
