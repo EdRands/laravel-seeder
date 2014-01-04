@@ -22,7 +22,7 @@ return array(
       | you may use many connections at once using the Database library.
       |
      */
-    'default' => 'sqlite-memory',
+    'default' => 'sqlite',
     /*
       |--------------------------------------------------------------------------
       | Database Connections
@@ -40,42 +40,42 @@ return array(
      */
     'connections' => array(
         'sqlite-memory' => array(
-            'driver'   => 'sqlite',
+            'driver' => 'sqlite',
             'database' => ':memory:',
-            'prefix'   => '',
+            'prefix' => '',
         ),
         'sqlite' => array(
-            'driver'   => 'sqlite',
+            'driver' => 'sqlite',
             'database' => __DIR__.'/../database/production.sqlite',
-            'prefix'   => '',
+            'prefix' => '',
         ),
         'mysql' => array(
-            'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'database'  => 'database',
-            'username'  => 'root',
-            'password'  => '',
-            'charset'   => 'utf8',
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'database' => 'database',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
+            'prefix' => '',
         ),
         'pgsql' => array(
-            'driver'   => 'pgsql',
-            'host'     => 'localhost',
+            'driver' => 'pgsql',
+            'host' => 'localhost',
             'database' => 'database',
             'username' => 'root',
             'password' => '',
-            'charset'  => 'utf8',
-            'prefix'   => '',
-            'schema'   => 'public',
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
         ),
         'sqlsrv' => array(
-            'driver'   => 'sqlsrv',
-            'host'     => 'localhost',
+            'driver' => 'sqlsrv',
+            'host' => 'localhost',
             'database' => 'database',
             'username' => 'root',
             'password' => '',
-            'prefix'   => '',
+            'prefix' => '',
         ),
     ),
     /*
@@ -100,10 +100,10 @@ return array(
       |
      */
     'redis' => array(
-        'cluster' => true,
+        'cluster' => false,
         'default' => array(
-            'host'     => '127.0.0.1',
-            'port'     => 6379,
+            'host' => '127.0.0.1',
+            'port' => 6379,
             'database' => 0,
         ),
     ),

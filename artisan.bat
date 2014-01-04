@@ -1,2 +1,2 @@
 @ECHO OFF
-php artisan %*
+php artisan %* --env=develop

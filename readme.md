@@ -20,7 +20,7 @@ Continuous integration is a great way to automate testing and maintenance. Confi
 
 IDEs and code editors don't really understand the Laravel facade system, and so they have trouble giving you code suggestions and documentation for a lot of Laravel's functionality. To compensate for this, the [Laravel IDE Helper Generator](https://github.com/barryvdh/laravel-ide-helper) is included. Each time you update in Composer, a helper file is generated that your editor can understand.
 
-I found the information in Laravel 3's profiler to be helpful sometimes. It doesn't exist in Laravel 4, so a [Profiler](https://github.com/juy/profiler) has been included, which actually has more information than Laravel 3's offered.
+[Laravel 4 Debugbar](https://github.com/barryvdh/laravel-debugbar) is enabled in the development environment to provide information overload about what's happening when you load a page.
 
 
 ### Installing
