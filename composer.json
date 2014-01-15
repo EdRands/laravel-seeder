@@ -31,6 +31,7 @@
     },
     "scripts": {
         "post-install-cmd": [
+            "php artisan clear-compiled --env=develop",
             "php artisan ide-helper:generate --env=develop",
             "php artisan optimize --env=develop"
         ],
