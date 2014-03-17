@@ -32,6 +32,7 @@ return array(
             'driver' => 'beanstalkd',
             'host' => 'localhost',
             'queue' => 'default',
+            'ttr' => 60,
         ),
         'sqs' => array(
             'driver' => 'sqs',
@@ -42,21 +43,22 @@ return array(
         ),
         'iron' => array(
             'driver' => 'iron',
-            'project' => 'your-project-id',
+            'host' => 'mq-aws-us-west-1.iron.io',
             'token' => 'your-token',
+            'project' => 'your-project-id',
             'queue' => 'your-queue-name',
         ),
     ),
     /*
-    |--------------------------------------------------------------------------
-    | Failed Queue Jobs
-    |--------------------------------------------------------------------------
-    |
-    | These options configure the behavior of failed queue job logging so you
-    | can control which database and table are used to store the jobs that
-    | have failed. You may change them to any database / table you wish.
-    |
-    */
+      |--------------------------------------------------------------------------
+      | Failed Queue Jobs
+      |--------------------------------------------------------------------------
+      |
+      | These options configure the behavior of failed queue job logging so you
+      | can control which database and table are used to store the jobs that
+      | have failed. You may change them to any database / table you wish.
+      |
+     */
     'failed' => array(
         'database' => 'sqlite',
         'table' => 'failed_jobs',
