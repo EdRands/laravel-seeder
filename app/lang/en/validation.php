@@ -78,7 +78,11 @@ return array(
       | specify a specific custom language line for a given attribute rule.
       |
      */
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
     /*
       |--------------------------------------------------------------------------
       | Custom Validation Attributes
