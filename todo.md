@@ -3,7 +3,7 @@
 + If using nginx, modify nginx-server.conf, make sure it's included, then reload nginx
  + Change `server_name`, `access_log`, `error_log`, `root`
 + Add server_name to operating system's hosts file
- + Windows 7: `%systemroot%\System32\drivers\etc\hosts` (requires administration privileges)
+ + Windows 7, 8, 8.1: `%systemroot%\System32\drivers\etc\hosts` (requires administration privileges to edit)
 + Customize NetBeans IDE project
  + Change the project name in nbproject/project.xml at Project > Configuration > Name
  + Customize the project properties
