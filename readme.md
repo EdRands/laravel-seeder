@@ -3,6 +3,7 @@
 [![License](http://img.shields.io/packagist/l/edrands/laravel-seeder.svg?style=flat)](https://packagist.org/packages/edrands/laravel-seeder)
 [![Build Status](http://img.shields.io/travis/edrands/laravel-seeder.svg?style=flat)](https://travis-ci.org/edrands/laravel-seeder)
 [![Latest Stable Version](http://img.shields.io/packagist/v/edrands/laravel-seeder.svg?style=flat)](https://packagist.org/packages/edrands/laravel-seeder)
+[![Dependency Status](https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024/badge.png)](https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024)
 
 ## About the Enhanced Laravel Project Seeder
 
