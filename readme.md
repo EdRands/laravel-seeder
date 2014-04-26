@@ -1,6 +1,8 @@
 # Enhanced Laravel Project Seeder
 
-[![Latest Stable Version](https://poser.pugx.org/edrands/laravel-seeder/v/stable.png)](https://packagist.org/packages/edrands/laravel-seeder) [![Build Status](https://travis-ci.org/edrands/laravel-seeder.png?branch=master)](https://travis-ci.org/edrands/laravel-seeder) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/edrands/laravel-seeder/badges/quality-score.png?s=75ec6e8d1c51dc7aba66ee8c87f187b9ef64a40f)](https://scrutinizer-ci.com/g/edrands/laravel-seeder/) [![Code Coverage](https://scrutinizer-ci.com/g/edrands/laravel-seeder/badges/coverage.png?s=0d9d11d55dd5204facec96ee1add14de0f22c6e2)](https://scrutinizer-ci.com/g/edrands/laravel-seeder/) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/74508fb4-88db-4ef2-aeef-ccc7c248277e/mini.png)](https://insight.sensiolabs.com/projects/74508fb4-88db-4ef2-aeef-ccc7c248277e)
+[![License](http://img.shields.io/packagist/l/edrands/laravel-seeder.svg?style=flat)](https://packagist.org/packages/edrands/laravel-seeder)
+[![Build Status](http://img.shields.io/travis/edrands/laravel-seeder.svg?style=flat)](https://travis-ci.org/edrands/laravel-seeder)
+[![Latest Stable Version](http://img.shields.io/packagist/v/edrands/laravel-seeder.svg?style=flat)](https://packagist.org/packages/edrands/laravel-seeder)
 
 ## About the Enhanced Laravel Project Seeder
 
