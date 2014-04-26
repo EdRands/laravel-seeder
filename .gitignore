@@ -13,6 +13,8 @@ $RECYCLE.BIN/
 
 # Laravel
 /bootstrap/compiled.php
+.env.*.php
+.env.php
 _ide_helper.php
 _ide_helper_models.php
 
