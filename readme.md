@@ -14,7 +14,7 @@ This is meant mostly for my benefit, but if it's helpful to you, you're welcome 
 
 ### What's In This Thing
 
-[Laravel 4.0](http://laravel.com/), of course. Wouldn't be much of a Laravel project seeder without that.
+The latest stable version of [Laravel 4](http://laravel.com/), of course. Wouldn't be much of a Laravel project seeder without that.
 
 Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes [Codeception](http://codeception.com/), [Mockery](https://github.com/padraic/mockery) and [Hamcrest](https://github.com/davedevelopment/hamcrest-php). These tools make testing easier, almost fun, and therefore more likely testing will actually happen.
 
