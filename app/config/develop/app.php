@@ -92,7 +92,6 @@ return array(
         'Tabbable' => 'Bootstrapper\\Tabbable',
         'Table' => 'Bootstrapper\\Table',
         'Thumbnail' => 'Bootstrapper\\Thumbnail',
-        'Typeahead' => 'Bootstrapper\\Typeahead',
         'Typography' => 'Bootstrapper\\Typography',
         'Debugbar' => 'Barryvdh\Debugbar\Facade',
     ),
