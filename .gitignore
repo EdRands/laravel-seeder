@@ -1,7 +1,3 @@
-#############
-## Operating Systems
-#############
-
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -9,41 +5,26 @@ ehthumbs.db
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-#############
-## Miscellaneous
-#############
+# Backups
 *.bak
 
 # SQLite database snapshots
 *_snapshot
 
-
-#############
-## Laravel
-#############
+# Laravel
 /bootstrap/compiled.php
+.env.*.php
+.env.php
 _ide_helper.php
 _ide_helper_models.php
 
-
-#############
-## Composer
-#############
+# Composer
 /vendor/
-composer.phar
 
-
-#############
-## NetBeans IDE
-#############
+# NetBeans IDE
 /nbproject/private/
 
-#############
-## PhpStorm IDE
-#############
+# PhpStorm IDE
 /.idea/workspace.xml
 
-
-#############
-## Project
-#############
+# Miscellaneous

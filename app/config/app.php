@@ -47,6 +47,17 @@ return array(
     'locale' => 'en',
     /*
       |--------------------------------------------------------------------------
+      | Application Fallback Locale
+      |--------------------------------------------------------------------------
+      |
+      | The fallback locale determines the locale to use when the current one
+      | is not available. You may change the value to correspond to any of
+      | the language folders that are provided through your application.
+      |
+     */
+    'fallback_locale' => 'en',
+    /*
+      |--------------------------------------------------------------------------
       | Encryption Key
       |--------------------------------------------------------------------------
       |
@@ -176,7 +187,6 @@ return array(
         'Tabbable' => 'Bootstrapper\\Tabbable',
         'Table' => 'Bootstrapper\\Table',
         'Thumbnail' => 'Bootstrapper\\Thumbnail',
-        'Typeahead' => 'Bootstrapper\\Typeahead',
         'Typography' => 'Bootstrapper\\Typography',
     ),
 );
