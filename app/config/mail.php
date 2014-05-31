@@ -19,19 +19,18 @@ return array(
       | SMTP Host Address
       |--------------------------------------------------------------------------
       |
-      | Here you may provide the host address of the SMTP server used by your
-      | applications. A default option is provided that is compatible with
-      | the Mailgun mail service, which will provide reliable delivery.
+      | Here you may provide the host address of the SMTP server used by the
+      | application.
       |
      */
-    'host' => 'smtp.mailgun.org',
+    'host' => 'smtp.mandrillapp.com',
     /*
       |--------------------------------------------------------------------------
       | SMTP Host Port
       |--------------------------------------------------------------------------
       |
-      | This is the SMTP port used by your application to delivery e-mails to
-      | users of your application. Like the host we have set this value to
+      | This is the SMTP port used by the application to deliver e-mails to
+      | users of the application. Like the host we have set this value to
       | stay compatible with the Mailgun e-mail application by default.
       |
      */
