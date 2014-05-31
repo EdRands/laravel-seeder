@@ -40,7 +40,7 @@
         </div>
 
         @section('scripts')
-        <script src="{{ asset('js/vendor/jquery-2.0.3.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/jquery-2.1.1.min.js') }}"></script>
         <script src="{{ asset('js/vendor/bootstrap-3.1.1.min.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         @show
