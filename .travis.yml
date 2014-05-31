@@ -13,7 +13,7 @@ before_script:
   - php-cgi -b 127.0.0.1:9000 &
   - sudo nginx -c app/tests/nginx.conf -p "$PWD/"
   - composer self-update -n
-  - composer install --dev -n --prefer-source
+  - composer install --dev -n
 
 # Run tests through Codeception
 script: php-cgi codecept.phar run -n -c "codeception.travis.yml"
