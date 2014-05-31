@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" href="{{ asset('css/bootstrap-3.1.1.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-theme.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/font-awesome-4.0.3.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome-4.1.0.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
