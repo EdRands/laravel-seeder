@@ -1,2 +1,2 @@
 @ECHO OFF
-vendor\bin\codecept %*
+php codecept.phar %*
