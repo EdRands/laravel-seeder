@@ -18,4 +18,4 @@ before_script:
   - composer install --dev -n --prefer-source
 
 # Run tests through Codeception
-script: vendor/bin/codecept run -n -c "codeception.travis.yml"
+script: php-cgi codecept.phar run -n -c "codeception.travis.yml"
