@@ -12,7 +12,11 @@
         <link rel="stylesheet" href="{{ asset('css/font-awesome-4.0.3.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-        <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="//cdn.jsdelivr.net/html5shiv/3.7/html5shiv.min.js"></script>
+          <script src="//cdn.jsdelivr.net/respond/1.4/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
         <?php
