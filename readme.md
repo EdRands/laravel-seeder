@@ -1,9 +1,10 @@
 # Enhanced Laravel Project Seeder
 
-[![License](http://img.shields.io/packagist/l/edrands/laravel-seeder.svg?style=flat)](https://packagist.org/packages/edrands/laravel-seeder)
-[![Build Status](http://img.shields.io/travis/edrands/laravel-seeder.svg?style=flat)](https://travis-ci.org/edrands/laravel-seeder)
-[![Latest Stable Version](http://img.shields.io/packagist/v/edrands/laravel-seeder.svg?style=flat)](https://packagist.org/packages/edrands/laravel-seeder)
-[![Dependency Status](https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024/badge.png)](https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024)
+[![Latest Stable Version](https://poser.pugx.org/edrands/laravel-seeder/v/stable.svg)](https://packagist.org/packages/edrands/laravel-seeder)
+[![Total Downloads](https://poser.pugx.org/edrands/laravel-seeder/downloads.svg)](https://packagist.org/packages/edrands/laravel-seeder)
+[![Latest Unstable Version](https://poser.pugx.org/edrands/laravel-seeder/v/unstable.svg)](https://packagist.org/packages/edrands/laravel-seeder)
+[![License](https://poser.pugx.org/edrands/laravel-seeder/license.svg)](https://packagist.org/packages/edrands/laravel-seeder)
+[![Dependency Status](https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024/badge.svg)](https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024)
 
 ## About the Enhanced Laravel Project Seeder
 
@@ -55,9 +56,10 @@ The Enhanced Laravel Project Seeder is open-sourced software licensed under the 
 ## About Laravel
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://img.shields.io/packagist/dm/laravel/framework.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Version](http://img.shields.io/github/tag/laravel/framework.svg)](https://github.com/laravel/framework/releases)
-[![Dependency Status](https://www.versioneye.com/php/laravel:framework/badge.svg)](https://www.versioneye.com/php/laravel:framework)
+[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
+[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
 

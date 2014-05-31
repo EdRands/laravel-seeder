@@ -7,12 +7,16 @@
         <meta name="description" content="@yield('description')">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="{{ asset('css/bootstrap-3.0.2.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-3.1.1.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-theme.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/font-awesome-4.0.3.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome-4.1.0.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-        <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="//cdn.jsdelivr.net/html5shiv/3.7/html5shiv.min.js"></script>
+          <script src="//cdn.jsdelivr.net/respond/1.4/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
         <?php
@@ -36,8 +40,8 @@
         </div>
 
         @section('scripts')
-        <script src="{{ asset('js/vendor/jquery-2.0.3.min.js') }}"></script>
-        <script src="{{ asset('js/vendor/bootstrap-3.0.2.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/jquery-2.1.1.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/bootstrap-3.1.1.min.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         @show
     </body>

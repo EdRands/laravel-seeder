@@ -446,11 +446,30 @@ class TestGuy extends \Codeception\AbstractGuy
      * Documentation taken from corresponding module.
      * ----------------------------------------------
      *
+     *
+     * @see Codeception\Module::getName()
+     * @return \Codeception\Maybe
+     */
+    public function getName() {
+        $this->scenario->addStep(new \Codeception\Step\Action('getName', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
      * Assert that the session has a given list of values.
-	 *
-	 * @param  string|array  $key
-	 * @param  mixed  $value
-	 * @return void
+     *
+     * @param  string|array $key
+     * @param  mixed $value
+     * @return void
     * Conditional Assertion: Test won't be stopped on fail
      * @see Codeception\Module\Laravel4::seeInSession()
      * @return \Codeception\Maybe
@@ -469,10 +488,10 @@ class TestGuy extends \Codeception\AbstractGuy
      * ----------------------------------------------
      *
      * Assert that the session has a given list of values.
-	 *
-	 * @param  string|array  $key
-	 * @param  mixed  $value
-	 * @return void
+     *
+     * @param  string|array $key
+     * @param  mixed $value
+     * @return void
      * @see Codeception\Module\Laravel4::seeInSession()
      * @return \Codeception\Maybe
      */
@@ -492,9 +511,9 @@ class TestGuy extends \Codeception\AbstractGuy
      * ----------------------------------------------
      *
      * Assert that the session has a given list of values.
-	 *
-	 * @param  array  $bindings
-	 * @return void
+     *
+     * @param  array $bindings
+     * @return void
     * Conditional Assertion: Test won't be stopped on fail
      * @see Codeception\Module\Laravel4::seeSessionHasValues()
      * @return \Codeception\Maybe
@@ -513,9 +532,9 @@ class TestGuy extends \Codeception\AbstractGuy
      * ----------------------------------------------
      *
      * Assert that the session has a given list of values.
-	 *
-	 * @param  array  $bindings
-	 * @return void
+     *
+     * @param  array $bindings
+     * @return void
      * @see Codeception\Module\Laravel4::seeSessionHasValues()
      * @return \Codeception\Maybe
      */
@@ -534,9 +553,74 @@ class TestGuy extends \Codeception\AbstractGuy
      * Documentation taken from corresponding module.
      * ----------------------------------------------
      *
+     * Assert that Session has error messages
+     * The seeSessionHasValues cannot be used, as Message bag Object is returned by Laravel4
+     *
+     * Useful for validation messages and generally messages array
+     *  e.g.
+     *  return `Redirect::to('register')->withErrors($validator);`
+     *
+     * Example of Usage
+     *
+     * ``` php
+     * <?php
+     * $I->seeSessionErrorMessage(array('username'=>'Invalid Username'));
+     * ?>
+     * ```
+     * @param array $bindings
+    * Conditional Assertion: Test won't be stopped on fail
+     * @see Codeception\Module\Laravel4::seeSessionErrorMessage()
+     * @return \Codeception\Maybe
+     */
+    public function canSeeSessionErrorMessage($bindings) {
+        $this->scenario->addStep(new \Codeception\Step\ConditionalAssertion('seeSessionErrorMessage', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Assert that Session has error messages
+     * The seeSessionHasValues cannot be used, as Message bag Object is returned by Laravel4
+     *
+     * Useful for validation messages and generally messages array
+     *  e.g.
+     *  return `Redirect::to('register')->withErrors($validator);`
+     *
+     * Example of Usage
+     *
+     * ``` php
+     * <?php
+     * $I->seeSessionErrorMessage(array('username'=>'Invalid Username'));
+     * ?>
+     * ```
+     * @param array $bindings
+     * @see Codeception\Module\Laravel4::seeSessionErrorMessage()
+     * @return \Codeception\Maybe
+     */
+    public function seeSessionErrorMessage($bindings) {
+        $this->scenario->addStep(new \Codeception\Step\Assertion('seeSessionErrorMessage', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
      * Assert that the session has errors bound.
-	 *
-	 * @return bool
+     *
+     * @return bool
     * Conditional Assertion: Test won't be stopped on fail
      * @see Codeception\Module\Laravel4::seeSessionHasErrors()
      * @return \Codeception\Maybe
@@ -555,8 +639,8 @@ class TestGuy extends \Codeception\AbstractGuy
      * ----------------------------------------------
      *
      * Assert that the session has errors bound.
-	 *
-	 * @return bool
+     *
+     * @return bool
      * @see Codeception\Module\Laravel4::seeSessionHasErrors()
      * @return \Codeception\Maybe
      */
@@ -576,10 +660,10 @@ class TestGuy extends \Codeception\AbstractGuy
      * ----------------------------------------------
      *
      * Set the currently logged in user for the application.
-	 *
-	 * @param  \Illuminate\Auth\UserInterface  $user
-	 * @param  string  $driver
-	 * @return void
+     *
+     * @param  \Illuminate\Auth\UserInterface $user
+     * @param  string $driver
+     * @return void
      * @see Codeception\Module\Laravel4::amLoggedAs()
      * @return \Codeception\Maybe
      */
@@ -599,31 +683,189 @@ class TestGuy extends \Codeception\AbstractGuy
      * ----------------------------------------------
      *
      * Return an instance of a class from the IoC Container.
-	 * (http://laravel.com/docs/ioc)
-	 * 
-	 * Example
-	 * ``` php
+     * (http://laravel.com/docs/ioc)
+     *
+     * Example
+     * ``` php
      * <?php
-	 * // In Laravel
-	 * App::bind('foo', function($app)
-	 * {
-	 *     return new FooBar;
-	 * });
-	 * 
-	 * // Then in test
-	 * $service = $I->grabService('foo');
-	 * 
-	 * // Will return an instance of FooBar, also works for singletons.
+     * // In Laravel
+     * App::bind('foo', function($app)
+     * {
+     *     return new FooBar;
+     * });
+     *
+     * // Then in test
+     * $service = $I->grabService('foo');
+     *
+     * // Will return an instance of FooBar, also works for singletons.
      * ?>
-	 * ```
-	 * 
-	 * @param  string  $class
-	 * @return mixed
+     * ```
+     *
+     * @param  string $class
+     * @return mixed
      * @see Codeception\Module\Laravel4::grabService()
      * @return \Codeception\Maybe
      */
     public function grabService($class) {
         $this->scenario->addStep(new \Codeception\Step\Action('grabService', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Inserts record into the database.
+     *
+     * ``` php
+     * <?php
+     * $user_id = $I->haveRecord('users', array('name' => 'Davert'));
+     * ?>
+     * ```
+     *
+     * @param $model
+     * @param array $attributes
+     * @return mixed
+     * @see Codeception\Module\Laravel4::haveRecord()
+     * @return \Codeception\Maybe
+     */
+    public function haveRecord($model, $attributes = null) {
+        $this->scenario->addStep(new \Codeception\Step\Action('haveRecord', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Checks that record exists in database.
+     *
+     * ``` php
+     * $I->seeRecord('users', array('name' => 'davert'));
+     * ```
+     *
+     * @param $model
+     * @param array $attributes
+    * Conditional Assertion: Test won't be stopped on fail
+     * @see Codeception\Module\Laravel4::seeRecord()
+     * @return \Codeception\Maybe
+     */
+    public function canSeeRecord($model, $attributes = null) {
+        $this->scenario->addStep(new \Codeception\Step\ConditionalAssertion('seeRecord', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Checks that record exists in database.
+     *
+     * ``` php
+     * $I->seeRecord('users', array('name' => 'davert'));
+     * ```
+     *
+     * @param $model
+     * @param array $attributes
+     * @see Codeception\Module\Laravel4::seeRecord()
+     * @return \Codeception\Maybe
+     */
+    public function seeRecord($model, $attributes = null) {
+        $this->scenario->addStep(new \Codeception\Step\Assertion('seeRecord', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Checks that record does not exist in database.
+     *
+     * ``` php
+     * $I->dontSeeRecord('users', array('name' => 'davert'));
+     * ```
+     *
+     * @param $model
+     * @param array $attributes
+    * Conditional Assertion: Test won't be stopped on fail
+     * @see Codeception\Module\Laravel4::dontSeeRecord()
+     * @return \Codeception\Maybe
+     */
+    public function cantSeeRecord($model, $attributes = null) {
+        $this->scenario->addStep(new \Codeception\Step\ConditionalAssertion('dontSeeRecord', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Checks that record does not exist in database.
+     *
+     * ``` php
+     * $I->dontSeeRecord('users', array('name' => 'davert'));
+     * ```
+     *
+     * @param $model
+     * @param array $attributes
+     * @see Codeception\Module\Laravel4::dontSeeRecord()
+     * @return \Codeception\Maybe
+     */
+    public function dontSeeRecord($model, $attributes = null) {
+        $this->scenario->addStep(new \Codeception\Step\Assertion('dontSeeRecord', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * Retrieves record from database
+     *
+     * ``` php
+     * $category = $I->grabRecord('users', array('name' => 'davert'));
+     * ```
+     *
+     * @param $model
+     * @param array $attributes
+     * @return mixed
+     * @see Codeception\Module\Laravel4::grabRecord()
+     * @return \Codeception\Maybe
+     */
+    public function grabRecord($model, $attributes = null) {
+        $this->scenario->addStep(new \Codeception\Step\Action('grabRecord', func_get_args()));
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
@@ -1871,8 +2113,8 @@ class TestGuy extends \Codeception\AbstractGuy
      *
      * ``` php
      * <?php
-     * $I->sendAjaxPostRequest('/updateSettings', array('notifications' => true); // POST
-     * $I->sendAjaxGetRequest('/updateSettings', array('notifications' => true); // GET
+     * $I->sendAjaxPostRequest('/updateSettings', array('notifications' => true)); // POST
+     * $I->sendAjaxGetRequest('/updateSettings', array('notifications' => true)); // GET
      *
      * ```
      *
@@ -1883,6 +2125,40 @@ class TestGuy extends \Codeception\AbstractGuy
      */
     public function sendAjaxPostRequest($uri, $params = null) {
         $this->scenario->addStep(new \Codeception\Step\Action('sendAjaxPostRequest', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     * If your page triggers an ajax request, you can perform it manually.
+     * This action sends an ajax request with specified method and params.
+     *
+     * Example:
+     *
+     * You need to perform an ajax request specifying the HTTP method.
+     *
+     * ``` php
+     * <?php
+     * $I->sendAjaxRequest('PUT', /posts/7', array('title' => 'new title');
+     *
+     * ```
+     *
+     * @param $method
+     * @param $uri
+     * @param $params
+     * @see Codeception\Util\Framework::sendAjaxRequest()
+     * @return \Codeception\Maybe
+     */
+    public function sendAjaxRequest($method, $uri, $params = null) {
+        $this->scenario->addStep(new \Codeception\Step\Action('sendAjaxRequest', func_get_args()));
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
@@ -2475,7 +2751,7 @@ class TestGuy extends \Codeception\AbstractGuy
      *
      * ``` php
      * <?php
-     * $I->seeInDatabase('users', array('name' => 'Davert', 'email' => 'davert@mail.com'));
+     * $I->dontSeeInDatabase('users', array('name' => 'Davert', 'email' => 'davert@mail.com'));
      *
      * ```
      * Will generate:
@@ -2513,7 +2789,7 @@ class TestGuy extends \Codeception\AbstractGuy
      *
      * ``` php
      * <?php
-     * $I->seeInDatabase('users', array('name' => 'Davert', 'email' => 'davert@mail.com'));
+     * $I->dontSeeInDatabase('users', array('name' => 'Davert', 'email' => 'davert@mail.com'));
      *
      * ```
      * Will generate:
