@@ -9,8 +9,6 @@ php:
 # Setup before the tests
 # Install nginx and turn on php
 before_script:
-  - php-cgi --version
-  - dir /home/travis/.phpenv/versions -A
   - sudo apt-get -qq install nginx
   - php-cgi -b 127.0.0.1:9000 &
   - sudo nginx -c app/tests/nginx.conf -p "$PWD/"
