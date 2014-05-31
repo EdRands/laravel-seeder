@@ -7,7 +7,7 @@
         <meta name="description" content="@yield('description')">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="{{ asset('css/bootstrap-3.0.2.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-3.1.1.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-theme.css') }}">
         <link rel="stylesheet" href="{{ asset('css/font-awesome-4.0.3.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -41,7 +41,7 @@
 
         @section('scripts')
         <script src="{{ asset('js/vendor/jquery-2.0.3.min.js') }}"></script>
-        <script src="{{ asset('js/vendor/bootstrap-3.0.2.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/bootstrap-3.1.1.min.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         @show
     </body>
