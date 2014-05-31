@@ -2,7 +2,7 @@
 
 use Way\Tests\Assert;
 
-class HomeTest extends TestCase {
+class HomeTest extends \TestCase {
 
     /**
      * Test that the front page loads.
