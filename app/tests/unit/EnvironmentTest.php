@@ -1,6 +1,5 @@
 <?php
 
-use \TestCase;
 use Way\Tests\Assert;
 
 class EnvironmentTest extends TestCase {
