@@ -10,7 +10,7 @@ return array(
       | sending of e-mail. You may specify which one you're using throughout
       | your application here. By default, Laravel is setup for SMTP mail.
       |
-      | Supported: "smtp", "mail", "sendmail"
+      | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "log"
       |
      */
     'driver' => 'smtp',
@@ -31,7 +31,7 @@ return array(
       |
       | This is the SMTP port used by the application to deliver e-mails to
       | users of the application. Like the host we have set this value to
-      | stay compatible with the Mailgun e-mail application by default.
+      | stay compatible with the Mandrill e-mail application by default.
       |
      */
     'port' => 587,
