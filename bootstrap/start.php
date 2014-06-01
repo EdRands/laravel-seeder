@@ -25,8 +25,7 @@ $app = new Illuminate\Foundation\Application;
  */
 
 $env = $app->detectEnvironment(array(
-    'develop' => array('ELAPTOP'),
-    'testing' => array('localhost', '*travis-ci*'),
+    'development' => array('homestead'),
 ));
 
 /*
