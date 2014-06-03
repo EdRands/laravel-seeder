@@ -25,6 +25,18 @@ return array(
     ),
     /*
       |--------------------------------------------------------------------------
+      | Model locations to include
+      |--------------------------------------------------------------------------
+      |
+      | Define in which directories the ide-helper:models command should look
+      | for models.
+      |
+     */
+    'model_locations' => array(
+        'app/models',
+    ),
+    /*
+      |--------------------------------------------------------------------------
       | Extra classes
       |--------------------------------------------------------------------------
       |
@@ -32,18 +44,19 @@ return array(
       |
      */
     'extra' => array(
+        'Artisan' => array('Illuminate\Foundation\Artisan'),
         'Eloquent' => array('Illuminate\Database\Eloquent\Builder', 'Illuminate\Database\Query\Builder'),
-        'Session'  => array('Illuminate\Session\Store'),
+        'Session' => array('Illuminate\Session\Store'),
     ),
     'magic' => array(
         'Log' => array(
-            'debug'     => 'Monolog\Logger::addDebug',
-            'info'      => 'Monolog\Logger::addInfo',
-            'notice'    => 'Monolog\Logger::addNotice',
-            'warning'   => 'Monolog\Logger::addWarning',
-            'error'     => 'Monolog\Logger::addError',
-            'critical'  => 'Monolog\Logger::addCritical',
-            'alert'     => 'Monolog\Logger::addAlert',
+            'debug' => 'Monolog\Logger::addDebug',
+            'info' => 'Monolog\Logger::addInfo',
+            'notice' => 'Monolog\Logger::addNotice',
+            'warning' => 'Monolog\Logger::addWarning',
+            'error' => 'Monolog\Logger::addError',
+            'critical' => 'Monolog\Logger::addCritical',
+            'alert' => 'Monolog\Logger::addAlert',
             'emergency' => 'Monolog\Logger::addEmergency',
         )
     )
