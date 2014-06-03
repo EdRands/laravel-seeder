@@ -12,7 +12,6 @@
     "require-dev": {
         "way/laravel-test-helpers": "dev-master",
         "mockery/mockery": "dev-master@dev",
-        "davedevelopment/hamcrest-php": "dev-master",
         "barryvdh/laravel-debugbar": "1.*@stable",
         "barryvdh/laravel-ide-helper": "1.*@stable"
     },
