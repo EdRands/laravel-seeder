@@ -7,14 +7,14 @@
     "require": {
         "php": ">=5.4.0",
         "patricktalmadge/bootstrapper": "~4.1.14",
-        "laravel/framework": "4.2.*@stable"
+        "laravel/framework": "4.2.*"
     },
     "require-dev": {
         "way/laravel-test-helpers": "dev-master",
         "mockery/mockery": "dev-master@dev",
         "way/generators": "2.*",
-        "barryvdh/laravel-debugbar": "1.*@stable",
-        "barryvdh/laravel-ide-helper": "1.*@stable"
+        "barryvdh/laravel-debugbar": "1.*",
+        "barryvdh/laravel-ide-helper": "1.*"
     },
     "autoload": {
         "classmap": [
