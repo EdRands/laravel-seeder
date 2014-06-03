@@ -12,6 +12,7 @@
     "require-dev": {
         "way/laravel-test-helpers": "dev-master",
         "mockery/mockery": "dev-master@dev",
+        "codeception/codeception": "2.*@RC",
         "way/generators": "2.*",
         "barryvdh/laravel-debugbar": "1.*",
         "barryvdh/laravel-ide-helper": "1.*"
