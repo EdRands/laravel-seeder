@@ -6,8 +6,8 @@
     "type": "project",
     "require": {
         "php": ">=5.4.0",
-        "patricktalmadge/bootstrapper": "dev-develop",
-        "laravel/framework": "4.1.*@stable"
+        "patricktalmadge/bootstrapper": "~4.1.14",
+        "laravel/framework": "4.2.*@stable"
     },
     "require-dev": {
         "way/laravel-test-helpers": "dev-master",
