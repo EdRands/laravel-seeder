@@ -68,6 +68,7 @@ return array(
       |
      */
     'key' => 'ReplaceWithYourKey',
+    'cipher' => MCRYPT_RIJNDAEL_128,
     /*
       |--------------------------------------------------------------------------
       | Autoloaded Service Providers
@@ -143,14 +144,14 @@ return array(
         'Eloquent' => 'Illuminate\Database\Eloquent\Model',
         'Event' => 'Illuminate\Support\Facades\Event',
         'File' => 'Illuminate\Support\Facades\File',
-        /*'Form' => 'Illuminate\Support\Facades\Form',*/
+        /* 'Form' => 'Illuminate\Support\Facades\Form', */
         'Hash' => 'Illuminate\Support\Facades\Hash',
         'HTML' => 'Illuminate\Support\Facades\HTML',
         'Input' => 'Illuminate\Support\Facades\Input',
         'Lang' => 'Illuminate\Support\Facades\Lang',
         'Log' => 'Illuminate\Support\Facades\Log',
         'Mail' => 'Illuminate\Support\Facades\Mail',
-        /*'Paginator' => 'Illuminate\Support\Facades\Paginator',*/
+        /* 'Paginator' => 'Illuminate\Support\Facades\Paginator', */
         'Password' => 'Illuminate\Support\Facades\Password',
         'Queue' => 'Illuminate\Support\Facades\Queue',
         'Redirect' => 'Illuminate\Support\Facades\Redirect',
@@ -161,6 +162,7 @@ return array(
         'Schema' => 'Illuminate\Support\Facades\Schema',
         'Seeder' => 'Illuminate\Database\Seeder',
         'Session' => 'Illuminate\Support\Facades\Session',
+        'SoftDeletingTrait' => 'Illuminate\Database\Eloquent\SoftDeletingTrait',
         'SSH' => 'Illuminate\Support\Facades\SSH',
         'Str' => 'Illuminate\Support\Str',
         'URL' => 'Illuminate\Support\Facades\URL',

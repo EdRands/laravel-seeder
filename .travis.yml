@@ -16,4 +16,4 @@ before_script:
   - composer install --dev -n
 
 # Run tests through Codeception
-script: php codecept.phar run --no-interaction --config="codeception.travis.yml"
+script: ./vendor/bin/codecept run --no-interaction --config="codeception.travis.yml"

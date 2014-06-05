@@ -1,2 +1,2 @@
 @ECHO OFF
-php codecept.phar %*
+./vendor/bin/codecept %*

@@ -6,15 +6,16 @@
     "type": "project",
     "require": {
         "php": ">=5.4.0",
-        "patricktalmadge/bootstrapper": "dev-develop",
-        "laravel/framework": "4.1.*@stable"
+        "patricktalmadge/bootstrapper": "~4.1.14",
+        "laravel/framework": "4.2.*"
     },
     "require-dev": {
         "way/laravel-test-helpers": "dev-master",
         "mockery/mockery": "dev-master@dev",
-        "davedevelopment/hamcrest-php": "dev-master",
-        "barryvdh/laravel-debugbar": "1.*@stable",
-        "barryvdh/laravel-ide-helper": "1.*@stable"
+        "codeception/codeception": "2.*@RC",
+        "way/generators": "2.*",
+        "barryvdh/laravel-debugbar": "1.*",
+        "barryvdh/laravel-ide-helper": "1.*"
     },
     "autoload": {
         "classmap": [
@@ -28,15 +29,15 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php artisan clear-compiled --env=develop",
-            "php artisan ide-helper:generate --env=develop",
-            "php artisan optimize --env=develop"
+            "php artisan clear-compiled",
+            "php artisan ide-helper:generate --env=development",
+            "php artisan optimize --env=development"
         ],
         "post-update-cmd": [
-            "php artisan clear-compiled --env=develop",
-            "php artisan ide-helper:generate --env=develop",
-            "php artisan debugbar:publish --env=develop",
-            "php artisan optimize --env=develop"
+            "php artisan clear-compiled",
+            "php artisan ide-helper:generate",
+            "php artisan debugbar:publish",
+            "php artisan optimize"
         ],
         "post-create-project-cmd": [
             "php artisan key:generate"
@@ -45,5 +46,5 @@
     "config": {
         "preferred-install": "dist"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
