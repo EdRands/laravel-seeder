@@ -21,7 +21,7 @@ return array(
      | Vendor files are for css: font-awesome (including fonts) en for js: jquery 1.8.3
      |
      */
-    'include_vendors' => false,
+    'include_vendors' => true,
 
     /*
      |--------------------------------------------------------------------------
