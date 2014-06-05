@@ -6,17 +6,23 @@
 [![License](https://poser.pugx.org/edrands/laravel-seeder/license.svg)](https://packagist.org/packages/edrands/laravel-seeder)
 [![Dependency Status](https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024/badge.svg)](https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024)
 
+
 ## About the Enhanced Laravel Project Seeder
 
 After starting a few projects with Laravel, I realized I was repeating myself a lot in my first few steps, setting up the same things just to get going. This project is meant to alleviate that problem, so I can get rolling on the actual project fast.
 
 This package is not meant to be a dependency for other projects. It's meant to be used with Composer's `create-project` command.
 
-This is meant mostly for my benefit, but if it's helpful to you, you're welcome to start your own Laravel based projects with it, or fork it and customize it to your needs.
+This is meant mostly for my benefit, and in some regards is highly opinionated. But if it's helpful to you, you're welcome to start your own Laravel based projects with it, or fork it and customize it to your needs.
+
 
 ### What's In This Thing
 
-The latest stable version of [Laravel 4](http://laravel.com/), of course. Wouldn't be much of a Laravel project seeder without that.
+[Laravel](http://laravel.com/), of course. Wouldn't be much of a Laravel project seeder without that. It's version 4.2 right now.
+
+Lots of projects use [Bootstrap](http://getbootstrap.com/) for their front end framework, so version 3.1 of that is included. Also included is [Bootstrapper](https://packagist.org/packages/patricktalmadge/bootstrapper), a Laravel way to generate Bootstrap compatible markup. handy for complex things like menus.
+
+Icons. [Lots of icons](http://fontawesome.io/icons/) via [Font Awesome v4.1](http://fontawesome.io/). 439 at last count.
 
 Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes [Codeception](http://codeception.com/), [Mockery](https://github.com/padraic/mockery) and [Hamcrest](https://github.com/davedevelopment/hamcrest-php). These tools make testing easier, almost fun, and therefore more likely testing will actually happen.
 
@@ -26,12 +32,16 @@ IDEs and code editors don't really understand the Laravel facade system, and so 
 
 [Laravel 4 Debugbar](https://github.com/barryvdh/laravel-debugbar) is enabled in the development environment to provide information overload about what's happening when you load a page.
 
+To help help speed up workflow, there's also [Jeffrey Way's generators](https://github.com/JeffreyWay/Laravel-4-Generators).
+
+I currently use [NetBeans](https://netbeans.org/) as my IDE, so the files for a NetBeans PHP project come along too.
+
 
 ### Installing
 
 [Composer](http://getcomposer.org) must be installed on your system in order for this to work. But if you're working with Laravel, you probably have it installed all ready anyway.
 
-1. Open a command prompt in the directory where you keep your projects. For example, I'm running Windows and use `c:\websites`
+1. Open a command prompt in the directory where you keep your projects. For example, I'm running Windows and use `c:\development`
 2. Now run `composer create-project edrands/laravel-seeder project-name` replacing `project-name` with the name of the directory for all your project's file. This must be a non-existent or empty directory.
 3. Wait while Composer automatically downloads the seed, installs all the dependencies, generates an IDE code completion helper, and generates a random hashing key.
 4. Follow the steps in `todo.md` in the root directory of your new project.
@@ -98,9 +108,7 @@ A description of this project, what it's about, what it does, how it works and w
 
 Work on this project should strive to adhere to the following standards and models:
 
-+ PHP:[PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) and therefore [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) and [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md)
-+ Git:[Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
-+ Versioning:[Semantic Versioning v2.*](http://semver.org/)
++ [Semantic Versioning v2.*](http://semver.org/)
 
 ## License
 
