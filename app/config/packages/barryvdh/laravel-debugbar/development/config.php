@@ -74,7 +74,7 @@ return [
     'options' => [
         'pdo' => [
             'with_params' => true, // Render SQL with the parameters substituted
-            'quotation_char' => "`", // The character to surround params
+            'quotation_char' => '`', // The character to surround params
             'extra_connections' => [ //Add extra connections to the PDO Collector
                 // 'mysql',
             ]
