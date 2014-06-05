@@ -21,7 +21,7 @@ return array(
      | Vendor files are for css: font-awesome (including fonts) en for js: jquery 1.8.3
      |
      */
-    'include_vendors' => true,
+    'include_vendors' => false,
 
     /*
      |--------------------------------------------------------------------------
@@ -43,25 +43,24 @@ return array(
      |
      */
     'collectors' => array(
-        'phpinfo' => true, // Php version
+        'phpinfo' => false, // Php version
         'messages' => true, // Messages
         'time' => true, // Time Datalogger
         'memory' => true, // Memory usage
         'exceptions' => true, // Exception displayer
         'log' => true, // Logs from Monolog (merged in messages if enabled)
         'db' => true, // Show database (PDO) queries and bindings
-        'views' => true, // Views with their data
-        'route' => true, // Current route information
-        'laravel' => true, // Laravel version and environment
-        'events' => true, // All events fired
+        'views' => false, // Views with their data
+        'route' => false, // Current route information
+        'laravel' => false, // Laravel version and environment
+        'events' => false, // All events fired
         'twig' => false, // Twig, requires barryvdh/laravel-twigbridge
-        'default_request' => true, // Regular or special Symfony request logger
-        'symfony_request' => true, // Only one can be enabled..
-        'mail' => true, // Catch mail messages
-        'logs' => true, // Add the latest log messages
-        'files' => true, // Show the included files
-        'config' => true, // Display config settings
-
+        'default_request' => false, // Regular or special Symfony request logger
+        'symfony_request' => false, // Only one can be enabled..
+        'mail' => false, // Catch mail messages
+        'logs' => false, // Add the latest log messages
+        'files' => false, // Show the included files
+        'config' => false, // Display config settings
     ),
 
     /*
@@ -75,7 +74,7 @@ return array(
     'options' => array(
         'pdo' => array(
             'with_params' => true, // Render SQL with the parameters substituted
-            'quotation_char' => "'", // The character to surround params
+            'quotation_char' => "`", // The character to surround params
             'extra_connections' => array( //Add extra connections to the PDO Collector
                 // 'mysql',
             )
