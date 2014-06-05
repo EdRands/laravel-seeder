@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{{ $pageTitle }}} - {{{ Config::get('project.name.short', 'Project') }}}</title>
+        <title>{{{ $pageTitle }}} - {{{ trans('project.name.short') }}}</title>
         <meta name="description" content="@yield('description')">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -28,7 +28,7 @@
         <div class="container text-center">
             <hr>
             <footer class="small">
-                <p>Copyright &copy; {{ date('Y') }} {{{ Config::get('project.copyrightHolder') }}}</p>
+                <p>Copyright &copy; {{ date('Y') }} {{{ trans('project.copyrightHolder') }}}</p>
                 <p>Sprout image by Bruno Maia, <a href="http://www.icontexto.com">IconTexto</a></p>
             </footer>
         </div>
