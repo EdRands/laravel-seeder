@@ -31,7 +31,11 @@
           <h1>
 <a name="enhanced-laravel-project-seeder" class="anchor" href="#enhanced-laravel-project-seeder"><span class="octicon octicon-link"></span></a>Enhanced Laravel Project Seeder</h1>
 
-<p><a href="https://packagist.org/packages/edrands/laravel-seeder"><img src="https://poser.pugx.org/edrands/laravel-seeder/v/stable.png" alt="Latest Stable Version"></a> <a href="https://travis-ci.org/edrands/laravel-seeder"><img src="https://travis-ci.org/edrands/laravel-seeder.png?branch=master" alt="Build Status"></a> <a href="https://scrutinizer-ci.com/g/edrands/laravel-seeder/"><img src="https://scrutinizer-ci.com/g/edrands/laravel-seeder/badges/quality-score.png?s=75ec6e8d1c51dc7aba66ee8c87f187b9ef64a40f" alt="Scrutinizer Quality Score"></a> <a href="https://scrutinizer-ci.com/g/edrands/laravel-seeder/"><img src="https://scrutinizer-ci.com/g/edrands/laravel-seeder/badges/coverage.png?s=0d9d11d55dd5204facec96ee1add14de0f22c6e2" alt="Code Coverage"></a> <a href="https://insight.sensiolabs.com/projects/74508fb4-88db-4ef2-aeef-ccc7c248277e"><img src="https://insight.sensiolabs.com/projects/74508fb4-88db-4ef2-aeef-ccc7c248277e/mini.png" alt="SensioLabsInsight"></a></p>
+<p><a href="https://packagist.org/packages/edrands/laravel-seeder"><img src="https://poser.pugx.org/edrands/laravel-seeder/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/edrands/laravel-seeder"><img src="https://poser.pugx.org/edrands/laravel-seeder/downloads.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/edrands/laravel-seeder"><img src="https://poser.pugx.org/edrands/laravel-seeder/v/unstable.svg" alt="Latest Unstable Version"></a>
+<a href="https://packagist.org/packages/edrands/laravel-seeder"><img src="https://poser.pugx.org/edrands/laravel-seeder/license.svg" alt="License"></a>
+<a href="https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024"><img src="https://www.versioneye.com/user/projects/535b45adfe0d07cf8f000024/badge.svg" alt="Dependency Status"></a></p>
 
 <h2>
 <a name="about-the-enhanced-laravel-project-seeder" class="anchor" href="#about-the-enhanced-laravel-project-seeder"><span class="octicon octicon-link"></span></a>About the Enhanced Laravel Project Seeder</h2>
@@ -40,12 +44,16 @@
 
 <p>This package is not meant to be a dependency for other projects. It's meant to be used with Composer's <code>create-project</code> command.</p>
 
-<p>This is meant mostly for my benefit, but if it's helpful to you, you're welcome to start your own Laravel based projects with it, or fork it and customize it to your needs.</p>
+<p>This is meant mostly for my benefit, and in some regards is highly opinionated. But if it's helpful to you, you're welcome to start your own Laravel based projects with it, or fork it and customize it to your needs.</p>
 
 <h3>
 <a name="whats-in-this-thing" class="anchor" href="#whats-in-this-thing"><span class="octicon octicon-link"></span></a>What's In This Thing</h3>
 
-<p><a href="http://laravel.com/">Laravel 4.0</a>, of course. Wouldn't be much of a Laravel project seeder without that.</p>
+<p><a href="http://laravel.com/">Laravel</a>, of course. Wouldn't be much of a Laravel project seeder without that. It's version 4.2 right now.</p>
+
+<p>Lots of projects use <a href="http://getbootstrap.com/">Bootstrap</a> for their front end framework, so version 3.1 of that is included. Also included is <a href="https://packagist.org/packages/patricktalmadge/bootstrapper">Bootstrapper</a>, a Laravel way to generate Bootstrap compatible markup. handy for complex things like menus.</p>
+
+<p>Icons. <a href="http://fontawesome.io/icons/">Lots of icons</a> via <a href="http://fontawesome.io/">Font Awesome v4.1</a>. 439 at last count.</p>
 
 <p>Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes <a href="http://codeception.com/">Codeception</a>, <a href="https://github.com/padraic/mockery">Mockery</a> and <a href="https://github.com/davedevelopment/hamcrest-php">Hamcrest</a>. These tools make testing easier, almost fun, and therefore more likely testing will actually happen.</p>
 
@@ -53,7 +61,11 @@
 
 <p>IDEs and code editors don't really understand the Laravel facade system, and so they have trouble giving you code suggestions and documentation for a lot of Laravel's functionality. To compensate for this, the <a href="https://github.com/barryvdh/laravel-ide-helper">Laravel IDE Helper Generator</a> is included. Each time you update in Composer, a helper file is generated that your editor can understand.</p>
 
-<p>I found the information in Laravel 3's profiler to be helpful sometimes. It doesn't exist in Laravel 4, so a <a href="https://github.com/juy/profiler">Profiler</a> has been included, which actually has more information than Laravel 3's offered.</p>
+<p><a href="https://github.com/barryvdh/laravel-debugbar">Laravel 4 Debugbar</a> is enabled in the development environment to provide information overload about what's happening when you load a page.</p>
+
+<p>To help help speed up workflow, there's also <a href="https://github.com/JeffreyWay/Laravel-4-Generators">Jeffrey Way's generators</a>.</p>
+
+<p>I currently use <a href="https://netbeans.org/">NetBeans</a> as my IDE, so the files for a NetBeans PHP project come along too.</p>
 
 <h3>
 <a name="installing" class="anchor" href="#installing"><span class="octicon octicon-link"></span></a>Installing</h3>
@@ -61,7 +73,7 @@
 <p><a href="http://getcomposer.org">Composer</a> must be installed on your system in order for this to work. But if you're working with Laravel, you probably have it installed all ready anyway.</p>
 
 <ol>
-<li>Open a command prompt in the directory where you keep your projects. For example, I'm running Windows and use <code>c:\websites</code>
+<li>Open a command prompt in the directory where you keep your projects. For example, I'm running Windows and use <code>c:\development</code>
 </li>
 <li>Now run <code>composer create-project edrands/laravel-seeder project-name</code> replacing <code>project-name</code> with the name of the directory for all your project's file. This must be a non-existent or empty directory.</li>
 <li>Wait while Composer automatically downloads the seed, installs all the dependencies, generates an IDE code completion helper, and generates a random hashing key.</li>
@@ -86,7 +98,11 @@
 <h2>
 <a name="about-laravel" class="anchor" href="#about-laravel"><span class="octicon octicon-link"></span></a>About Laravel</h2>
 
-<p><a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/version.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.png" alt="Total Downloads"></a> <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.png" alt="Build Status"></a></p>
+<p><a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/downloads.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/unstable.svg" alt="Latest Unstable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a></p>
 
 <p>Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.</p>
 
@@ -122,7 +138,7 @@
 
           <p class="repo-owner"><a href="https://github.com/edrands/laravel-seeder"></a> is maintained by <a href="https://github.com/edrands">edrands</a>.</p>
 
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
       </div>
     </div>
