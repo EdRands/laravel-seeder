@@ -39,11 +39,6 @@ return array(
       |
      */
     'connections' => array(
-        'sqlite-memory' => array(
-            'driver' => 'sqlite',
-            'database' => ':memory:',
-            'prefix' => '',
-        ),
         'sqlite' => array(
             'driver' => 'sqlite',
             'database' => __DIR__.'/../database/database.sqlite',
