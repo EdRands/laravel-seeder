@@ -13,7 +13,7 @@ return array(
       | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "log"
       |
      */
-    'driver' => 'smtp',
+    'driver' => 'mandrill',
     /*
       |--------------------------------------------------------------------------
       | SMTP Host Address
