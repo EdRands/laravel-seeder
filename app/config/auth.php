@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Default Authentication Driver
@@ -50,9 +50,9 @@ return array(
       | they have less time to be guessed. You may change this as needed.
       |
      */
-    'reminder' => array(
+    'reminder' => [
         'email'  => 'emails.auth.reminder',
         'table'  => 'password_reminders',
         'expire' => 60,
-    ),
-);
+    ],
+];

@@ -1,9 +1,9 @@
 <?php
 
-return array(
-    'name' => array(
+return [
+    'name' => [
         'short' => 'Project',
         'full'  => 'Untitled Project',
-    ),
+    ],
     'copyrightHolder'  => 'Ed Rands',
-);
+];

@@ -10,4 +10,4 @@
   | that are included on basically every request into the application.
   |
  */
-return array();
+return [];

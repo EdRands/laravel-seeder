@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Default Cache Driver
@@ -57,9 +57,9 @@ return array(
       | should contain a value for "host", "port", and "weight" options.
       |
      */
-    'memcached' => array(
-        array('host' => '127.0.0.1', 'port' => 11211, 'weight' => 100),
-    ),
+    'memcached' => [
+        ['host' => '127.0.0.1', 'port' => 11211, 'weight' => 100],
+    ],
     /*
       |--------------------------------------------------------------------------
       | Cache Key Prefix
@@ -71,4 +71,4 @@ return array(
       |
      */
     'prefix' => 'laravel',
-);
+];

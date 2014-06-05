@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/', array ('as' => 'home', 'uses' => 'SplashController@splash'));
+Route::get('/', ['as' => 'home', 'uses' => 'SplashController@splash']);

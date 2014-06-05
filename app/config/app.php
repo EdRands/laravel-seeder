@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Application Debug Mode
@@ -79,7 +79,7 @@ return array(
       | this array to grant expanded functionality to your applications.
       |
      */
-    'providers' => array(
+    'providers' => [
         'Illuminate\Foundation\Providers\ArtisanServiceProvider',
         'Illuminate\Auth\AuthServiceProvider',
         'Illuminate\Cache\CacheServiceProvider',
@@ -107,7 +107,7 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
         'Bootstrapper\BootstrapperServiceProvider',
-    ),
+    ],
     /*
       |--------------------------------------------------------------------------
       | Service Provider Manifest
@@ -129,7 +129,7 @@ return array(
       | the aliases are "lazy" loaded so they don't hinder performance.
       |
      */
-    'aliases' => array(
+    'aliases' => [
         'App' => 'Illuminate\Support\Facades\App',
         'Artisan' => 'Illuminate\Support\Facades\Artisan',
         'Auth' => 'Illuminate\Support\Facades\Auth',
@@ -190,5 +190,5 @@ return array(
         'Table' => 'Bootstrapper\\Table',
         'Thumbnail' => 'Bootstrapper\\Thumbnail',
         'Typography' => 'Bootstrapper\\Typography',
-    ),
-);
+    ],
+];

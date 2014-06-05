@@ -24,9 +24,9 @@ $app = new Illuminate\Foundation\Application;
   |
  */
 
-$env = $app->detectEnvironment(array(
-    'development' => array('homestead', 'ELAPTOP', 'Toshiba-6D158133C'),
-));
+$env = $app->detectEnvironment([
+    'development' => ['homestead', 'ELAPTOP', 'Toshiba-6D158133C'],
+]);
 
 /*
   |--------------------------------------------------------------------------

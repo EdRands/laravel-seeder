@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Mail Driver
@@ -45,7 +45,7 @@ return array(
       | used globally for all e-mails that are sent by your application.
       |
      */
-    'from' => array('address' => null, 'name' => null),
+    'from' => ['address' => null, 'name' => null],
     /*
       |--------------------------------------------------------------------------
       | E-Mail Encryption Protocol
@@ -101,4 +101,4 @@ return array(
       |
      */
     'pretend' => false,
-);
+];

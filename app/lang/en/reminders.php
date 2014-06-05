@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Password Reminder Language Lines
@@ -15,4 +15,4 @@ return array(
     'user' => 'We can&rsquo;t find a user with that e-mail address.',
     'token' => 'This password reset token is invalid.',
     'sent' => 'Password reminder sent!',
-);
+];

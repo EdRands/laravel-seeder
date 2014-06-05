@@ -1,14 +1,14 @@
 <?php
 
-return array(
+return [
     'default' => 'sqlite',
-    'connections' => array(
-        'sqlite' => array(
+    'connections' => [
+        'sqlite' => [
             'driver' => 'sqlite',
             'database' => __DIR__.'/../../database/database.sqlite',
             'prefix' => '',
-        ),
-        'mysql' => array(
+        ],
+        'mysql' => [
             'driver' => 'mysql',
             'host' => 'localhost',
             'database' => 'homestead',
@@ -17,8 +17,8 @@ return array(
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
-        ),
-        'pgsql' => array(
+        ],
+        'pgsql' => [
             'driver' => 'pgsql',
             'host' => 'localhost',
             'database' => 'homestead',
@@ -27,6 +27,6 @@ return array(
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
-        ),
-    ),
-);
+        ],
+    ],
+];

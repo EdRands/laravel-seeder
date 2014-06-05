@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
      |--------------------------------------------------------------------------
      | Debugbar Settings
@@ -42,7 +42,7 @@ return array(
      | Enable/disable DataCollectors
      |
      */
-    'collectors' => array(
+    'collectors' => [
         'phpinfo' => false, // Php version
         'messages' => true, // Messages
         'time' => true, // Time Datalogger
@@ -61,7 +61,7 @@ return array(
         'logs' => false, // Add the latest log messages
         'files' => false, // Show the included files
         'config' => false, // Display config settings
-    ),
+    ],
 
     /*
      |--------------------------------------------------------------------------
@@ -71,25 +71,25 @@ return array(
      | Configure some DataCollectors
      |
      */
-    'options' => array(
-        'pdo' => array(
+    'options' => [
+        'pdo' => [
             'with_params' => true, // Render SQL with the parameters substituted
             'quotation_char' => "`", // The character to surround params
-            'extra_connections' => array( //Add extra connections to the PDO Collector
+            'extra_connections' => [ //Add extra connections to the PDO Collector
                 // 'mysql',
-            )
-        ),
-        'mail' => array(
+            ]
+        ],
+        'mail' => [
             'full_log' => false
-        ),
+        ],
 
-        'views' => array(
+        'views' => [
             'data' => true,
-        ),
-        'route' => array(
+        ],
+        'route' => [
             'label' => true // show complete route on bar
-        )
-    ),
+        ]
+    ],
 
     /*
      |--------------------------------------------------------------------------
@@ -103,4 +103,4 @@ return array(
      */
     'inject' => true,
 
-);
+];
