@@ -69,14 +69,6 @@ return array(
             'prefix' => '',
             'schema' => 'public',
         ),
-        'sqlsrv' => array(
-            'driver' => 'sqlsrv',
-            'host' => 'localhost',
-            'database' => 'database',
-            'username' => 'root',
-            'password' => '',
-            'prefix' => '',
-        ),
     ),
     /*
       |--------------------------------------------------------------------------
