@@ -6,7 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=5.4.0",
-        "patricktalmadge/bootstrapper": "~4.1.14",
+        "patricktalmadge/bootstrapper": "~4.1.15",
         "laravel/framework": "4.2.*"
     },
     "require-dev": {
