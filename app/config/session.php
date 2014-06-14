@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Default Session Driver
@@ -70,7 +70,7 @@ return array(
       | happen on a given request. By default, the odds are 2 out of 100.
       |
      */
-    'lottery' => array(2, 100),
+    'lottery' => [2, 100],
     /*
       |--------------------------------------------------------------------------
       | Session Cookie Name
@@ -115,4 +115,4 @@ return array(
     |
     */
     'secure' => false,
-);
+];

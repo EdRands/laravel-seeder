@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | PDO Fetch Style
@@ -38,46 +38,33 @@ return array(
       | choice installed on your machine before you begin development.
       |
      */
-    'connections' => array(
-        'sqlite-memory' => array(
+    'connections' => [
+        'sqlite' => [
             'driver' => 'sqlite',
-            'database' => ':memory:',
+            'database' => __DIR__.'/../database/database.sqlite',
             'prefix' => '',
-        ),
-        'sqlite' => array(
-            'driver' => 'sqlite',
-            'database' => __DIR__.'/../database/production.sqlite',
-            'prefix' => '',
-        ),
-        'mysql' => array(
+        ],
+        'mysql' => [
             'driver' => 'mysql',
             'host' => 'localhost',
             'database' => 'forge',
             'username' => 'forge',
-            'password' => '',
+            'password' => getenv('MYSQL_PASSWORD'),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
-        ),
-        'pgsql' => array(
+        ],
+        'pgsql' => [
             'driver' => 'pgsql',
             'host' => 'localhost',
             'database' => 'forge',
             'username' => 'forge',
-            'password' => '',
+            'password' => getenv('PGSQL_PASSWORD'),
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
-        ),
-        'sqlsrv' => array(
-            'driver' => 'sqlsrv',
-            'host' => 'localhost',
-            'database' => 'database',
-            'username' => 'root',
-            'password' => '',
-            'prefix' => '',
-        ),
-    ),
+        ],
+    ],
     /*
       |--------------------------------------------------------------------------
       | Migration Repository Table
@@ -99,12 +86,12 @@ return array(
       | such as APC or Memcached. Laravel makes it easy to dig right in.
       |
      */
-    'redis' => array(
+    'redis' => [
         'cluster' => false,
-        'default' => array(
+        'default' => [
             'host' => '127.0.0.1',
             'port' => 6379,
             'database' => 0,
-        ),
-    ),
-);
+        ],
+    ],
+];

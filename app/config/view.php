@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
     |--------------------------------------------------------------------------
     | View Storage Paths
@@ -11,7 +11,7 @@ return array(
     | the usual Laravel view path has already been registered for you.
     |
     */
-    'paths' => array(__DIR__.'/../views'),
+    'paths' => [__DIR__.'/../views'],
     /*
     |--------------------------------------------------------------------------
     | Pagination View
@@ -23,4 +23,4 @@ return array(
     |
     */
     'pagination' => 'pagination::slider-3',
-);
+];

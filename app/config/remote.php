@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
     |--------------------------------------------------------------------------
     | Default Remote Connection Name
@@ -22,17 +22,17 @@ return array(
     | tasks on your servers, such as deploying out these applications.
     |
     */
-    'connections' => array(
-        'production' => array(
+    'connections' => [
+        'production' => [
             'host' => '',
             'username' => '',
             'password' => '',
             'key' => '',
             'keyphrase' => '',
             'root' => '/var/www',
-        ),
+        ],
 
-    ),
+    ],
     /*
     |--------------------------------------------------------------------------
     | Remote Server Groups
@@ -43,7 +43,7 @@ return array(
     | that is extremely easy to remember, such as "web" or "database".
     |
     */
-    'groups' => array(
-        'web' => array('production')
-    ),
-);
+    'groups' => [
+        'web' => ['production']
+    ],
+];

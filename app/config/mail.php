@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Mail Driver
@@ -13,7 +13,7 @@ return array(
       | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "log"
       |
      */
-    'driver' => 'smtp',
+    'driver' => 'mandrill',
     /*
       |--------------------------------------------------------------------------
       | SMTP Host Address
@@ -45,7 +45,7 @@ return array(
       | used globally for all e-mails that are sent by your application.
       |
      */
-    'from' => array('address' => null, 'name' => null),
+    'from' => ['address' => 'erands@gmail.com', 'name' => 'Ed Rands'],
     /*
       |--------------------------------------------------------------------------
       | E-Mail Encryption Protocol
@@ -101,4 +101,4 @@ return array(
       |
      */
     'pretend' => false,
-);
+];

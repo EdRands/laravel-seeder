@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Third Party Services
@@ -12,15 +12,15 @@ return array(
       | to have a conventional place to find your various credentials.
       |
      */
-    'mailgun' => array(
+    'mailgun' => [
         'domain' => '',
         'secret' => '',
-    ),
-    'mandrill' => array(
-        'secret' => '',
-    ),
-    'stripe' => array(
+    ],
+    'mandrill' => [
+        'secret' => getenv('MANDRILL_API_KEY'),
+    ],
+    'stripe' => [
         'model' => 'User',
         'secret' => '',
-    ),
-);
+    ],
+];

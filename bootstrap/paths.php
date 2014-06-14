@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Application Path
@@ -45,4 +45,4 @@ return array(
       |
      */
     'storage' => __DIR__.'/../app/storage',
-);
+];

@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
       |--------------------------------------------------------------------------
       | Workbench Author Name
@@ -24,4 +24,4 @@ return array(
       |
      */
     'email' => 'erands@gmail.com',
-);
+];
