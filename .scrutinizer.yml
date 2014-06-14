@@ -15,7 +15,7 @@ filter:
         - 'bootstrap/*'
         - 'public/index.php'
 before_commands:
-    - 'composer install --dev -n --prefer-source'
+    - 'composer install --dev -n'
 tools:
     php_mess_detector:
         filter:
