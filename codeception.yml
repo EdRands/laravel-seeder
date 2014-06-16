@@ -1,8 +1,8 @@
 paths:
-    tests: app/tests
-    log: app/tests/_output
-    data: app/tests/_data
-    helpers: app/tests/_support
+    tests: tests
+    log: tests/_output
+    data: tests/_data
+    helpers: tests/_support
 settings:
     bootstrap: _bootstrap.php
     colors: true
@@ -13,7 +13,7 @@ modules:
         PhpBrowser:
             url: 'http://laravelseeder.dev:8000'
         Db:
-            dsn: 'sqlite:./app/tests/_data/testing.sq3'
+            dsn: 'sqlite:./tests/_data/testing.sq3'
             user: ''
             password: ''
-            dump: app/tests/_data/dump.sql
+            dump: tests/_data/dump.sql
