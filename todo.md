@@ -15,4 +15,5 @@
 + Customize configuration in app/config/*
 + Customize test setup
  + Update url in `codeception.yml`
+ + Change `root` in `nginx.conf` in the tests directory. Specifically, change `edrands/laravel-seeder` to match your GitHub repository name.
 + Delete this todo.md file
