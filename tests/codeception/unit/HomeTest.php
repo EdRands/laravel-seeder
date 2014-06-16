@@ -1,7 +1,5 @@
 <?php
 
-use Way\Tests\Assert;
-
 class HomeTest extends TestCase {
 
     /**
