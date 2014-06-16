@@ -10,8 +10,8 @@ class HomeTest extends TestCase {
      * @return void
      */
     public function testHomePageIsWorking() {
-        $this->client->request('GET', '/');
+        $this->call('GET', '/');
 
-        Assert::true($this->client->getResponse()->isOk());
+        $this->assertResponseOk();
     }
 }
