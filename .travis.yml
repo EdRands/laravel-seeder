@@ -3,18 +3,17 @@ language: php
 
 # Versions of PHP to test against
 php:
-#  - 5.5
+  - 5.5
   - 5.4
 
 # Setup before the tests
 # Install nginx and turn on php
 before_script:
-  - pwd
-#  - sudo apt-get -qq install nginx
-#  - php-cgi -b 127.0.0.1:9000 &
-#  - sudo nginx -c app/tests/nginx.conf -p "$PWD/"
-#  - composer self-update -n
-#  - composer install --dev -n
+  - sudo apt-get -qq install nginx
+  - php-cgi -b 127.0.0.1:9000 &
+  - sudo nginx -c app/tests/nginx.conf -p "$PWD/"
+  - composer self-update -n
+  - composer install --dev -n
 
 # Run tests through Codeception
-#script: ./vendor/bin/codecept run --no-interaction --config="codeception.travis.yml"
+script: ./vendor/bin/codecept run --no-interaction --config="codeception.travis.yml"
