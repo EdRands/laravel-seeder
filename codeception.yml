@@ -1,6 +1,6 @@
 paths:
     tests: app/tests
-    log: app/tests/_log
+    log: app/tests/_output
     data: app/tests/_data
     helpers: app/tests/_helpers
 settings:
