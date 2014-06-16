@@ -6,4 +6,4 @@
 
 class_name: AcceptanceTester
 modules:
-    enabled: [PhpBrowser, WebHelper, Laravel4, Db]
+    enabled: [PhpBrowser, AcceptanceHelper, Laravel4, Db]
