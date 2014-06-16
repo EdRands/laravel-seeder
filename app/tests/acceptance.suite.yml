@@ -4,6 +4,6 @@
 # perform tests in browser using the WebDriver or PhpBrowser.
 # If you need both WebDriver and PHPBrowser tests - create a separate suite.
 
-class_name: WebGuy
+class_name: AcceptanceTester
 modules:
     enabled: [PhpBrowser, WebHelper, Laravel4, Db]
