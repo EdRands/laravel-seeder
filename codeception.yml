@@ -13,7 +13,7 @@ modules:
         PhpBrowser:
             url: 'http://laravelseeder.dev:8000'
         Db:
-            dsn: 'sqlite:./tests/_data/testing.sq3'
+            dsn: 'sqlite:./tests/_data/testing.sqlite'
             user: ''
             password: ''
             dump: tests/_data/dump.sql
