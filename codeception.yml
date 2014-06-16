@@ -11,7 +11,7 @@ settings:
 modules:
     config:
         PhpBrowser:
-            url: 'http://laravelseeder.dev'
+            url: 'http://laravelseeder.dev:8000'
         Db:
             dsn: 'sqlite:./app/tests/_data/testing.sq3'
             user: ''
