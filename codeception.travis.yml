@@ -1,8 +1,8 @@
 paths:
-    tests: tests
-    log: tests/_output
-    data: tests/_data
-    helpers: tests/_support
+    tests: tests/codeception
+    log: tests/codeception/_output
+    data: tests/codeception/_data
+    helpers: tests/codeception/_support
 settings:
     bootstrap: _bootstrap.php
     colors: true
@@ -13,7 +13,7 @@ modules:
         PhpBrowser:
             url: 'http://localhost'
         Db:
-            dsn: 'sqlite:./tests/_data/testing.sqlite'
+            dsn: 'sqlite:./tests/codeception/_data/testing.sqlite'
             user: ''
             password: ''
-            dump: tests/_data/dump.sql
+            dump: tests/codeception/_data/dump.sql
