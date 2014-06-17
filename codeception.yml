@@ -1,20 +1,19 @@
 paths:
-    tests: app/tests
-    log: app/tests/_log
-    data: app/tests/_data
-    helpers: app/tests/_helpers
+    tests: tests/codeception
+    log: tests/codeception/_output
+    data: tests/codeception/_data
+    helpers: tests/codeception/_support
 settings:
     bootstrap: _bootstrap.php
-    suite_class: \PHPUnit_Framework_TestSuite
     colors: true
     memory_limit: 1024M
     log: true
 modules:
     config:
         PhpBrowser:
-            url: 'http://laravelseeder.dev'
+            url: 'http://laravelseeder.dev:8000'
         Db:
-            dsn: 'sqlite:./app/tests/_data/testing.sq3'
+            dsn: 'sqlite:./tests/codeception/_data/testing.sqlite'
             user: ''
             password: ''
-            dump: app/tests/_data/dump.sql
+            dump: tests/codeception/_data/dump.sql
