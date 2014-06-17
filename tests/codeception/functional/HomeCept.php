@@ -1,6 +1,6 @@
 <?php
 
-$I = new TestGuy($scenario);
+$I = new FunctionalTester($scenario);
 $I->wantTo('view the planted splash page');
 $I->lookForwardTo('seeing the planted message');
 

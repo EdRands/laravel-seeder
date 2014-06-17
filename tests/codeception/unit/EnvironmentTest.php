@@ -1,7 +1,5 @@
 <?php
 
-use Way\Tests\Assert;
-
 class EnvironmentTest extends TestCase {
 
     /**
@@ -10,6 +8,6 @@ class EnvironmentTest extends TestCase {
      * @return void
      */
     public function testThisIsTestingEnvironment() {
-        Assert::Same(App::environment(), 'testing');
+        $this->assertSame(App::environment(), 'testing');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-$I = new WebGuy($scenario);
+$I = new AcceptanceTester($scenario);
 $I->wantTo('Check the home page shows the up and running message');
 
 $I->amOnPage('/');
