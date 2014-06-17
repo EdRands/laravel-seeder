@@ -24,7 +24,7 @@ Lots of projects use [Bootstrap](http://getbootstrap.com/) for their front end f
 
 Icons. [Lots of icons](http://fontawesome.io/icons/) via [Font Awesome v4.1](http://fontawesome.io/). 439 at last count.
 
-Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes [Codeception](http://codeception.com/), [Mockery](https://github.com/padraic/mockery) and [Hamcrest](https://github.com/davedevelopment/hamcrest-php). These tools make testing easier, almost fun, and therefore more likely testing will actually happen.
+Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes [Codeception](http://codeception.com/) framework and [Mockery](https://github.com/padraic/mockery). These tools make testing easier, almost fun, and therefore more likely testing will actually happen.
 
 Continuous integration is a great way to automate testing and maintenance. Configuration files for several CI services are included. [Travis](https://travis-ci.org) runs all the tests on push and pull requests. [Scrutinizer](https://scrutinizer-ci.com) runs a variety of scripts to check your code for security holes, sloppy code, and coding style problems. Keep in mind you still need to turn each service on for your project.
 
