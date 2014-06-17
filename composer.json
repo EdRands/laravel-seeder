@@ -10,7 +10,6 @@
         "laravel/framework": "4.2.*"
     },
     "require-dev": {
-        "way/laravel-test-helpers": "dev-master",
         "mockery/mockery": "dev-master@dev",
         "codeception/codeception": "2.*",
         "way/generators": "2.*",
