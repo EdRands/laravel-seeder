@@ -67,6 +67,18 @@ App::down(function() {
  * Other Required Files
  */
 
+// Composers are located within our /src directory.
+require_once base_path().'/src/composers.php';
+
 // Filters are located within our /src directory.
 require_once base_path().'/src/filters.php';
 
+// Helpers are located within our /src directory.
+require_once base_path().'/src/helpers.php';
+
+// Observers are located within our /src directory.
+require_once base_path().'/src/observers.php';
+
+
+// Services are located within our /src directory.
+require_once base_path().'/src/services.php';
