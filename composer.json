@@ -24,7 +24,6 @@
             "app/database/migrations",
             "app/database/seeds",
             "tests/TestCase.php"
-        ]
         ],
         "psr-4": {
             "EdRands\\Seeder\\": "src"
