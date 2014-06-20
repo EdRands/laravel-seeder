@@ -1,8 +1,9 @@
 <?php
+namespace EdRands\Seeder\Controllers;
 
 use Illuminate\Routing\Controller;
 
-class BaseController extends Controller {
+abstract class BaseController extends Controller {
 
     /**
      * Setup the layout used by the controller.
