@@ -11,8 +11,7 @@
   |
  */
 
-Route::filter('auth',
-    function() {
+Route::filter('auth', function() {
     if (Auth::guest()) {
         if (Request::ajax()) {
             return Response::make('Unauthorized', 401);
@@ -38,10 +37,10 @@ Route::filter('auth.basic', function() {
   |
  */
 
-Route::filter('guest',
-    function() {
-    if (Auth::check())
+Route::filter('guest', function() {
+    if (Auth::check()) {
         return Redirect::to('/');
+    }
 });
 
 /*
@@ -55,8 +54,7 @@ Route::filter('guest',
   |
  */
 
-Route::filter('csrf',
-    function() {
+Route::filter('csrf', function() {
     if (Session::token() != Input::get('_token')) {
         throw new Illuminate\Session\TokenMismatchException;
     }
