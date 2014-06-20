@@ -1,3 +1,5 @@
 <?php
 
-Route::get('/', ['as' => 'home', 'uses' => 'SplashController@splash']);
+$controllerNamespace = 'EdRands\\Seeder\\Controllers\\';
+
+Route::get('/', ['as' => 'home', 'uses' => $controllerNamespace.'SplashController@splash']);

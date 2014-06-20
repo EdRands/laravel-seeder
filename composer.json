@@ -18,7 +18,6 @@
     },
     "autoload": {
         "classmap": [
-            "app/controllers",
             "app/database/migrations",
             "app/database/seeds",
             "tests/TestCase.php"
