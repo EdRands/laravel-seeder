@@ -76,6 +76,8 @@ require_once base_path().'/src/helpers.php';
 // Observers are located within our /src directory.
 require_once base_path().'/src/observers.php';
 
+// Routes are located within our /src directory.
+require_once base_path().'/src/routes.php';
 
 // Services are located within our /src directory.
 require_once base_path().'/src/services.php';
