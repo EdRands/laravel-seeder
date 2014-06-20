@@ -19,7 +19,6 @@
     "autoload": {
         "classmap": [
             "app/controllers",
-            "app/models",
             "app/database/migrations",
             "app/database/seeds",
             "tests/TestCase.php"
