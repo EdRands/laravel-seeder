@@ -15,6 +15,7 @@ This package is not meant to be a dependency for other projects. It's meant to b
 
 This is meant mostly for my benefit, and in some regards is highly opinionated. But if it's helpful to you, you're welcome to start your own Laravel based projects with it, or fork it and customize it to your needs.
 
+There's a significant change to the layout from the base Laravel install. In anticipation of making more advanced projects, I've started following more advanced practices that involve breaking things up far beyond the basic MVC layout. Most of the files have moved out of the `app` directory into `src`. Everything is namespaced, and seperated into composers, observers, repositories, and lots of other parts. I've mostly followed the first part of [Dayle Rees' "Breaking the Mold"](http://daylerees.com/breaking-the-mold).
 
 ### What's In This Thing
 
