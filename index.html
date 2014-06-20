@@ -46,6 +46,8 @@
 
 <p>This is meant mostly for my benefit, and in some regards is highly opinionated. But if it's helpful to you, you're welcome to start your own Laravel based projects with it, or fork it and customize it to your needs.</p>
 
+<p>There's a significant change to the layout from the base Laravel install. In anticipation of making more advanced projects, I've started following more advanced practices that involve breaking things up far beyond the basic MVC layout. Most of the files have moved out of the <code>app</code> directory into <code>src</code>. Everything is namespaced, and seperated into composers, observers, repositories, and lots of other parts. I've mostly followed the first part of <a href="http://daylerees.com/breaking-the-mold">Dayle Rees' "Breaking the Mold"</a>.</p>
+
 <h3>
 <a name="whats-in-this-thing" class="anchor" href="#whats-in-this-thing"><span class="octicon octicon-link"></span></a>What's In This Thing</h3>
 
@@ -55,7 +57,7 @@
 
 <p>Icons. <a href="http://fontawesome.io/icons/">Lots of icons</a> via <a href="http://fontawesome.io/">Font Awesome v4.1</a>. 439 at last count.</p>
 
-<p>Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes <a href="http://codeception.com/">Codeception</a>, <a href="https://github.com/padraic/mockery">Mockery</a> and <a href="https://github.com/davedevelopment/hamcrest-php">Hamcrest</a>. These tools make testing easier, almost fun, and therefore more likely testing will actually happen.</p>
+<p>Testing is important, if for no other reason than the developer's peace of mind. Therefore the seeder includes <a href="http://codeception.com/">Codeception</a> framework and <a href="https://github.com/padraic/mockery">Mockery</a>. These tools make testing easier, almost fun, and therefore more likely testing will actually happen.</p>
 
 <p>Continuous integration is a great way to automate testing and maintenance. Configuration files for several CI services are included. <a href="https://travis-ci.org">Travis</a> runs all the tests on push and pull requests. <a href="https://scrutinizer-ci.com">Scrutinizer</a> runs a variety of scripts to check your code for security holes, sloppy code, and coding style problems. Keep in mind you still need to turn each service on for your project.</p>
 
@@ -94,36 +96,6 @@
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h3>
 
 <p>The Enhanced Laravel Project Seeder is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a></p>
-
-<h2>
-<a name="about-laravel" class="anchor" href="#about-laravel"><span class="octicon octicon-link"></span></a>About Laravel</h2>
-
-<p><a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/downloads.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/unstable.svg" alt="Latest Unstable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a></p>
-
-<p>Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.</p>
-
-<p>Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.</p>
-
-<p>Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.</p>
-
-<h3>
-<a name="official-documentation" class="anchor" href="#official-documentation"><span class="octicon octicon-link"></span></a>Official Documentation</h3>
-
-<p>Documentation for the entire framework can be found on the <a href="http://laravel.com/docs">Laravel website</a>.</p>
-
-<h3>
-<a name="contributing-to-laravel" class="anchor" href="#contributing-to-laravel"><span class="octicon octicon-link"></span></a>Contributing To Laravel</h3>
-
-<p>All issues and pull requests should be filed on the <a href="http://github.com/laravel/framework">laravel/framework</a> repository.</p>
-
-<h3>
-<a name="license-1" class="anchor" href="#license-1"><span class="octicon octicon-link"></span></a>License</h3>
-
-<p>The Laravel framework is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a></p>
         </section>
 
         <aside id="sidebar">
