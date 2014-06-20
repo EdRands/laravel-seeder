@@ -3,6 +3,7 @@
     "description": "The Enhanced Laravel Project Seeder gets new Laravel projects up-and-running fast. Features self-contained testing (no pear or global testing package required).",
     "keywords": ["laravel", "seeder", "starter", "project"],
     "license": "MIT",
+    "homepage": "http://edrands.github.io/laravel-seeder/",
     "type": "project",
     "require": {
         "php": ">=5.4.0",
