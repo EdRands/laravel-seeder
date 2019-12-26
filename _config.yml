@@ -1,0 +1,8 @@
+title: Enhanced Laravel Project Seeder
+description: The fastest way to start a new Laravel project
+google_analytics: UA-11203531-11
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
