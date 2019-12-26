@@ -2,6 +2,8 @@
 
 This project is no longer supported. Since a few people have starred, watched and forked this repo, I won't just outright remove it for now.
 
+While not a free replacement, if you're looking for a way to quickly start a new Laravel project, try [Laravel Spark](https://spark.laravel.com/).
+
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![Total Downloads](https://poser.pugx.org/edrands/laravel-seeder/downloads.svg)](https://packagist.org/packages/edrands/laravel-seeder)
 [![License](https://poser.pugx.org/edrands/laravel-seeder/license.svg)](https://packagist.org/packages/edrands/laravel-seeder)
