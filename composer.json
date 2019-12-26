@@ -4,6 +4,7 @@
     "keywords": ["laravel", "seeder", "starter", "project"],
     "license": "MIT",
     "type": "project",
+    "abandoned": true,
     "require": {
         "php": ">=5.4.0",
         "patricktalmadge/bootstrapper": "~4.1.15",
